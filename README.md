@@ -12,6 +12,6 @@ Here we collect instructions for data access and documentation of known issues w
 - *known-issues* describes how and where we document known issues related to the VIEWS model and/or data with implications for our users. Issues include, e.g., bugs in the model code and issues related to the processing or quality of input data informing the VIEWS model. Links to related repositories are also provided.
 
 **Resources for the VIEWS team:**
-- *Codebooks* contains the master codebooks for input data and predictions, and scripts to produce codebooks for different use cases. 
+- *codebooks* contains the master codebooks for input data and predictions, and scripts to produce codebooks for different use cases. 
 
 **Questions? Please contact us at [views@pcr.uu.se](mailto:views@pcr.uu.se).**
