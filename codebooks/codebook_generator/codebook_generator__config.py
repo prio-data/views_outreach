@@ -15,7 +15,7 @@ outcome_type = "predictors"
 
 # How are you loading the JSON version of the codebook?
 # Choose "api" or "file"
-fetch_type = "file" # api or file
+fetch_type = "api" # api or file
 
 # Where do you want to save your PDF file? Default is the VIEWS Dropbox under Codebooks/PDFs. 
 home = os.path.expanduser("~") # Don't change this line
