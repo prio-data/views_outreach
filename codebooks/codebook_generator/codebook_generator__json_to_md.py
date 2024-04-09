@@ -33,9 +33,9 @@ parent_dirname = os.path.abspath(os.path.join(dirname, os.pardir))
 # Creates file paths to the local JSON files (codebooks), currently 
 # stored in the parentdir of the running scipt
 if outcome_type == "forecasts":
-    file_path = os.path.join(parent_dirname, "codebook_fatalities002_forecasts.json")
+    file_path = os.path.join(parent_dirname, "master-codebooks/api/codebook_fatalities002_forecasts.json")
 if outcome_type == "predictors":
-    file_path = os.path.join(parent_dirname, "codebook_fatalities002_predictors.json")
+    file_path = os.path.join(parent_dirname, "master-codebooks/api/codebook_fatalities002_predictors.json")
 
 def generate_markdown(data, depth=0):
     markdown_content = ""
