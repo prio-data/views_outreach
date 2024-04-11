@@ -24,3 +24,31 @@ After making necessary changes to [codebook_generator__config.py](codebook_gener
 ```bash
 python codebook_generator__json_to_md.py
 ```
+## Minimal Example
+This is how a JSON input would look
+
+```json
+{
+  "section1": {
+    "attribute1": "value1",
+    "attribute2": "value2"
+  },
+  "section2": {
+    "attribute3": "value3",
+    "attribute4": "value4"
+  }
+}
+```
+The output from the converter script would look like this:
+
+```
+# Example Markdown Codebook
+
+## Section 1
+- **Attribute 1**: value1
+- **Attribute 2**: value2
+
+## Section 2
+- **Attribute 3**: value3
+- **Attribute 4**: value4
+```
