@@ -9,7 +9,7 @@ The Codebook Generator is designed to generate Markdown codebooks from JSON data
 
 ## Configuration
 
-Before running the script `[codebook_generator_json_to_md.py](codebook_generator__json_to_md.py)`, you need to configure the `[codebook_generator__config.py](codebook_generator__config.py)` file.
+Before running the script [codebook_generator_json_to_md.py](codebook_generator__json_to_md.py), you need to configure the [codebook_generator__config.py](codebook_generator__config.py) file.
 
 ### Configurable Variables
 
@@ -19,7 +19,7 @@ Before running the script `[codebook_generator_json_to_md.py](codebook_generator
 
 
 ## How to run this script
-After making necessary changes to `[codebook_generator__config.py](codebook_generator__config.py)`, run the script by clicking on the Run button in the top right of your IDE, or executing the following in Terminal:
+After making necessary changes to [codebook_generator__config.py](codebook_generator__config.py), run the script by clicking on the Run button in the top right of your IDE, or executing the following in Terminal:
 
 ```bash
 python codebook_generator__json_to_md.py
