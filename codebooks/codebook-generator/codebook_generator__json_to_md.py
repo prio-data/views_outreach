@@ -1,94 +1,99 @@
 import json
 import requests
-import os
+from pathlib import Path #preferred to os.path
+parent_dirname = Path(__file__).resolve().parent.parent #goes up two levels
 
-"""
-Before running this script, please go the config file and 
-customize your settings to generate the codebook based on 
-the source file of interest, and to choose your save path. 
+from codebook_generator__config import outcome_type, fetch_type, save_path, run #change parameters in this file located in same folder
 
-No edits are needed within this file.
+def set_paths_url(run, outcome_type, fetch_type, save_path, parent_dirname):
+    """ 
+    Function to generate the URL, codebook path, and file path based on the input parameters.
+    """
+    url_codebook = f"https://api.viewsforecasting.org/{run}/codebook"
 
-The script will print out what it has done, and where the 
-new codebook has been saved, when the script is finished.
-"""
+    codebook_name = f"codebook_{outcome_type}_{run}_from_{fetch_type}.md"
+    codebook_path = Path(save_path) / codebook_name
 
-with open(os.path.join(os.path.dirname(__file__), 'codebook_generator__config.py'), 'r') as f:
-    exec(f.read())
+    file_name = f"codebook_fatalities002_{outcome_type}.json" 
+    file_path = Path(parent_dirname) / "master-codebooks" / "api" / file_name
 
-if outcome_type == "predictors":
-    run = "predictors_fatalities002_0000_00"
-else: run = run
+    return url_codebook, codebook_path, file_path
 
-url_codebook = "https://api.viewsforecasting.org/"+run+"/codebook"
+def get_json_codebook():
+    """
+    Function to fetch existing JSON codebook from the API or local file based on the fetch_type, and return json file.
 
-# Specifies where to save the produced codebooks, and by which name
-codebook_name = "codebook_" + outcome_type + "_" + run + "_from_" + fetch_type + ".md"
-codebook_path = os.path.join(save_path, codebook_name)
+    Args:
+    fetch_type (str): The method to fetch the codebook data - 'api' or 'file'.
 
-# Gets the dirname of the parent dir to where the script is located
-dirname = os.path.dirname(__file__)
-parent_dirname = os.path.abspath(os.path.join(dirname, os.pardir))
+    url_codebook (str): The URL to fetch the codebook data from the API.
+    OR
+    file_path (str): The path to the local file containing the codebook data.
 
-# Creates file paths to the local JSON files (codebooks), currently 
-# stored in the parentdir of the running scipt
-if outcome_type == "forecasts":
-    file_path = os.path.join(parent_dirname, "master-codebooks/api/codebook_fatalities002_forecasts.json")
-if outcome_type == "predictors":
-    file_path = os.path.join(parent_dirname, "master-codebooks/api/codebook_fatalities002_predictors.json")
-
-def generate_markdown(data, depth=0):
-    markdown_content = ""
-    first_key_processed = False
-    for key, value in data.items():
-        if depth == 0:
-            if not first_key_processed:
-                first_key_processed = True
-            else:
-                markdown_content += "\n"  # Add a new line before each new key at depth=0 after the first key
-            markdown_content += f"## {key}\n\n"
-        if isinstance(value, dict):
-            if depth > 0:  # If depth is greater than 0, print the key only in h2 tag
-                markdown_content += f"{'  ' * (depth - 1)}- **{key}**:\n"
-            markdown_content += generate_markdown(value, depth=depth+1)
+    Returns:
+    json_data (dict): The JSON data fetched from the API or local file.
+    """
+    if fetch_type == "api":
+        response = requests.get(url_codebook)
+        if response.status_code == 200:
+            json_data = response.json()
+            return json_data
         else:
-            markdown_content += f"{'  ' * depth}- **{key}**: {value}\n"  # Adjusted indentation here
+            raise Exception("Failed to fetch data from the provided URL.")
+    elif fetch_type == "file":
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                json_data = json.load(file)
+                return json_data
+        except FileNotFoundError:
+            raise Exception("File not found.")
+        except json.JSONDecodeError:
+            raise Exception("Invalid JSON format.")
+    else:
+        raise Exception("Invalid fetch type. Choose 'api' or 'file'.")
+
+def convert_to_markdown(data, depth=0): #formerly generate_markdown
+    """
+    Convert nested dictionary data to Markdown format.
+
+    Parameters:
+        data (dict): The nested dictionary containing the data to be converted to Markdown.
+        depth (int): The depth of nesting in the dictionary (default is 0).
+
+    Returns:
+        markdown_content (str): Markdown content generated from the nested dictionary.
+    """
+    markdown_content = "" # Initialize an empty string to store the Markdown content
+    first_key_processed = False # Flag to check if the first key at depth=0 has been processed
+    for key, value in data.items(): # Iterate through the key-value pairs in the dictionary
+        if depth == 0: 
+            if not first_key_processed: # Check if the first key at depth=0 has been processed
+                first_key_processed = True 
+            else: # Add a new line before each new key at depth=0 after the first key
+                markdown_content += "\n"  
+            markdown_content += f"## {key}\n\n" # Add the key as a header in the Markdown content
+        if isinstance(value, dict): # Check if the value is a nested dictionary
+            if depth > 0:  # If depth is greater than 0, print the key only in h2 tag
+                markdown_content += f"{'  ' * (depth - 1)}- **{key}**:\n" # Add the key as a bold item in the Markdown content
+            markdown_content += convert_to_markdown(value, depth=depth+1) # Recursively call the function for nested dictionaries
+        else: # If the value is not a dictionary
+            markdown_content += f"{'  ' * depth}- **{key}**: {value}\n"  # Add the key-value pair to the Markdown content
     return markdown_content
 
-def generate_codebook_from_file():
-    try:
-        with open(file_path, "r", encoding="utf-8") as file:
-            json_data = json.load(file)
-            markdown_content = generate_markdown(json_data)
-            if outcome_type == "forecasts":
-                with open(codebook_path, "w", encoding="utf-8") as f:
-                    f.write(markdown_content)
-            if outcome_type == "predictors":
-                with open(codebook_path, "w", encoding="utf-8") as f:
-                    f.write(markdown_content)
-            print(f"\nMarkdown file for {outcome_type} generated successfully from local file!\nIt is saved to {save_path}.")
-    except FileNotFoundError:
-        print("File not found.")
-    except json.JSONDecodeError:
-        print("Invalid JSON format.")
+def save_markdown_file(markdown_content, codebook_path):
+    """
+    Save the Markdown content to a file.
 
-def generate_codebook_from_api():
-    response = requests.get(url_codebook)
-    if response.status_code == 200:
-        json_data = response.json()
-        markdown_content = generate_markdown(json_data)
-        if outcome_type == "forecasts":
-            with open(codebook_path, "w", encoding="utf-8") as f:
-                f.write(markdown_content)
-        if outcome_type == "predictors":
-            with open(codebook_path, "w", encoding="utf-8") as f:
-                f.write(markdown_content)
-        print(f"\nMarkdown file from {outcome_type} generated successfully from the VIEWS API!\nIt is saved to {save_path}.")
-    else:
-        print("Failed to fetch data from the provided URL.")
+    Parameters:
+        markdown_content (str): The Markdown content to be saved.
+        codebook_path (str): The path to save the Markdown file.
+    """
+    with open(codebook_path, "w", encoding="utf-8") as f: # Open the file in write mode
+        f.write(markdown_content) # Write the Markdown content to the file
 
 if __name__ == "__main__":
-    if fetch_type == "file":
-        generate_codebook_from_file()
-    if fetch_type == "api":
-        generate_codebook_from_api()
+    url_codebook, codebook_path, file_path = set_paths_url(run, outcome_type, fetch_type, save_path, parent_dirname)
+    json_data = get_json_codebook()
+    markdown_content = convert_to_markdown(json_data)
+    save_markdown_file(markdown_content, codebook_path)
+    print(f"\nMarkdown file for {outcome_type} generated successfully from {fetch_type}!\nIt is saved to {save_path}.")
