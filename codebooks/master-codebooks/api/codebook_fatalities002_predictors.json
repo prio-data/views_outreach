@@ -15,7 +15,7 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-04",
+            "date_of_access": "2024-05",
             "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
             "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
@@ -50,7 +50,7 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-04",
+            "date_of_access": "2024-05",
             "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
             "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
@@ -85,7 +85,7 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-04",
+            "date_of_access": "2024-05",
             "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
             "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
@@ -120,7 +120,7 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-04",
+            "date_of_access": "2024-05",
             "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
             "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
@@ -155,7 +155,7 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-04",
+            "date_of_access": "2024-05",
             "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
             "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
@@ -174,7 +174,7 @@
             }
         }
     },
-    "vdem_v12_v2x_rule": {
+    "vdem_v2x_rule": {
         "name": "(V-Dem) Rule of law index",
         "description": "Index answering the question 'To what extent are laws transparently, independently, predictably, impartially, and equally enforced, and to what extent do the actions of government officials comply with the law?'",
         "unit": {
@@ -190,10 +190,10 @@
                 "id": "v2x_rule",
                 "url": "N/A"
             },
-            "date_of_access": "2022-05",
-            "dataset": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>",
-            "citation": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>; Pemstein et al. 2022. 'The V-Dem Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data'. V-Dem Working Paper No. 21. University of Gothenburg: Varieties of Democracy Institute; Coppedge et al. 2022. 'V-Dem Codebook v12' Varieties of Democracy (V-Dem) Project",
-            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V12'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
+            "date_of_access": "2024-05",
+            "dataset": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "citation": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>; 'Pemstein et al. (2024, V-Dem Working Paper Series 2024:21); Coppedge et al. 2024. 'V-Dem Codebook v14' Varieties of Democracy (V-Dem) Project",
+            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V14'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
         },
         "visualization": {
             "legend": "Rule of law index",
@@ -209,7 +209,7 @@
             }
         }
     },
-    "vdem_v12_v2x_gender": {
+    "vdem_v2x_gender": {
         "name": "(V-Dem) Women political empowerment index",
         "description": "Index answering the question 'How politically empowered are women?'",
         "unit": {
@@ -225,10 +225,10 @@
                 "id": "v2x_gender",
                 "url": "N/A"
             },
-            "date_of_access": "2022-05",
-            "dataset": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>",
-            "citation": "Sundström, Aksel, Pamela Paxton, Yi-ting Wang and Staffan I. Lindberg. 2015. 'Women’s Political Empowerment: A New Global Index, 1900-2012'. V-Dem Working Paper No. 19. University of Gothenburg: Varieties of Democracy Institute; Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>; Pemstein et al. 2022. 'The V-Dem Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data'. V-Dem Working Paper No. 21. University of Gothenburg: Varieties of Democracy Institute",
-            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V12'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
+            "date_of_access": "2024-05",
+            "dataset": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "citation": "Sundström, Aksel, Pamela Paxton, Yi-ting Wang and Staffan I. Lindberg. 2015. 'Women’s Political Empowerment: A New Global Index, 1900-2012'. Sundström et al. (2017, V-Dem Working Paper Series 2017:19); Coppedge et al. 2024. 'V-Dem Codebook v14' Varieties of Democracy (V-Dem) Project",
+            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V14'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
         },
         "visualization": {
             "legend": "Women political empowerment index",
@@ -244,7 +244,7 @@
             }
         }
     },
-    "vdem_v12_v2x_civlib": {
+    "vdem_v2x_civlib": {
         "name": "(V-Dem) Civil liberties index",
         "description": "Index answering the question 'To what extent is civil liberty respected?'",
         "unit": {
@@ -260,10 +260,10 @@
                 "id": "v2x_civlib",
                 "url": "N/A"
             },
-            "date_of_access": "2022-05",
-            "dataset": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>",
-            "citation": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>; Pemstein et al. 2022. 'The V-Dem Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data'. V-Dem Working Paper No. 21. University of Gothenburg: Varieties of Democracy Institute; Coppedge et al. 2022. 'V-Dem Codebook v12' Varieties of Democracy (V-Dem) Project",
-            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V12'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
+            "date_of_access": "2024-05",
+            "dataset": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "citation": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V14'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
         },
         "visualization": {
             "legend": "Civil liberties index",
@@ -279,7 +279,7 @@
             }
         }
     },
-    "vdem_v12_v2xcl_acjst": {
+    "vdem_v2xcl_acjst": {
         "name": "(V-Dem) Access to justice index",
         "description": "Index answering the question 'Do citizens enjoy secure and effective access to justice?'",
         "unit": {
@@ -295,10 +295,10 @@
                 "id": "v2xcl_acjst",
                 "url": "N/A"
             },
-            "date_of_access": "2022-05",
-            "dataset": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>",
-            "citation": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>; Pemstein et al. 2022. 'The V-Dem Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data'. V-Dem Working Paper No. 21. University of Gothenburg: Varieties of Democracy Institute; Coppedge et al. 2022. 'V-Dem Codebook v12' Varieties of Democracy (V-Dem) Project",
-            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V12'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
+            "date_of_access": "2024-05",
+            "dataset": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "citation": "Pemstein et al. (2024, V-Dem Working Paper Series 2024:21); Coppedge et al. 2024. 'V-Dem Codebook v14' Varieties of Democracy (V-Dem) Project",
+            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V14'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
         },
         "visualization": {
             "legend": "Access to justice index",
@@ -314,7 +314,7 @@
             }
         }
     },
-    "vdem_v12_v2xeg_eqdr": {
+    "vdem_v2xeg_eqdr": {
         "name": "(V-Dem) Equal distribution of resources index",
         "description": "Index answering the question 'How equal is the distribution of resources?'",
         "unit": {
@@ -331,9 +331,9 @@
                 "url": "N/A"
             },
             "date_of_access": "2022-05",
-            "dataset": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>",
-            "citation": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>; Pemstein et al. 2022. 'The V-Dem Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data'. V-Dem Working Paper No. 21. University of Gothenburg: Varieties of Democracy Institute; Coppedge et al. 2022. 'V-Dem Codebook v12' Varieties of Democracy (V-Dem) Project",
-            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V12'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
+            "dataset": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "citation": "Sigman et al. (2015, V-Dem Working Paper Series 2015:22); Pemstein et al. (2024, V-Dem Working Paper Series 2024:21); Coppedge et al. 2024. 'V-Dem Codebook v14' Varieties of Democracy (V-Dem) Project",
+            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V14'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
         },
         "visualization": {
             "legend": "Equal distribution of resources index",
@@ -349,7 +349,7 @@
             }
         }
     },
-    "vdem_v12_v2x_libdem": {
+    "vdem_v2x_libdem": {
         "name": "(V-Dem) Liberal democracy index",
         "description": "Index answering the question 'To what extent is the ideal of liberal democracy achieved?'",
         "unit": {
@@ -365,10 +365,10 @@
                 "id": "v2x_libdem",
                 "url": "N/A"
             },
-            "date_of_access": "2022-05",
-            "dataset": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>",
-            "citation": "Coppedge et al. 2022. 'V-Dem Country-Year Dataset v12' Varieties of Democracy (V-Dem) Project. <a href='https://doi.org/10.23696/vdemds22'>https://doi.org/10.23696/vdemds22</a>; Pemstein et al. 2022. 'The V-Dem Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data'. V-Dem Working Paper No. 21. University of Gothenburg: Varieties of Democracy Institute; Coppedge et al. 2022. 'V-Dem Codebook v12' Varieties of Democracy (V-Dem) Project",
-            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V12'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
+            "date_of_access": "2024-05",
+            "dataset": "Coppedge et al. 2024. 'V-Dem Country-Year Dataset v14' Varieties of Democracy (V-Dem) Project. <a href='https://dx.doi.org/10.2139/ssrn.4774440'>https://dx.doi.org/10.2139/ssrn.4774440</a>",
+            "citation": "Coppedge et al. (2015, V-Dem Working Paper Series 2015:6); Coppedge et al. 2024. 'V-Dem Codebook v14' Varieties of Democracy (V-Dem) Project",
+            "license": "<a href='https://github.com/vdeminstitute/vdemdata/releases/tag/V14'>Creative Commons Attribution-ShareAlike License (CC-BY-SA)</a>"
         },
         "visualization": {
             "legend": "Liberal democracy index",
