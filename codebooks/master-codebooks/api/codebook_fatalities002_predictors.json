@@ -8,28 +8,28 @@
         },
         "source": {
             "institution": {
-                "name": "Uppsala Conflict Data Program (UCDP)", 
+                "name": "Uppsala Conflict Data Program (UCDP)",
                 "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
             },
             "variable": {
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-05",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
-            "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
+            "date_of_access": "2024-07",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.6",
+            "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
         "visualization": {
             "legend": "Fatality count",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_stand_1p_10k", 
+                "cm": "dictionary_stand_1p_10k",
                 "pgm": "dictionary_stand_1p"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "N/A", 
+                "data": "ln",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -43,28 +43,28 @@
         },
         "source": {
             "institution": {
-                "name": "Uppsala Conflict Data Program (UCDP)", 
+                "name": "Uppsala Conflict Data Program (UCDP)",
                 "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
             },
             "variable": {
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-05",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
-            "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
+            "date_of_access": "2024-07",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.6",
+            "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
         "visualization": {
             "legend": "Fatality count",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_stand_1p_10k", 
+                "cm": "dictionary_stand_1p_10k",
                 "pgm": "dictionary_stand_1p"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "N/A", 
+                "data": "ln",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -72,34 +72,34 @@
     "ucdp_ged_os_best_sum": {
         "name": "(UCDP) Observed fatalities, one-sided violence, VIEWS-adaptation",
         "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.pcr.uu.se/research/ucdp/definitions/'>one-sided violence</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
-        "unit": { 
+        "unit": {
             "name": "Fatality count",
             "range": "0-unlimited"
         },
         "source": {
             "institution": {
-                "name": "Uppsala Conflict Data Program (UCDP)", 
+                "name": "Uppsala Conflict Data Program (UCDP)",
                 "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
             },
             "variable": {
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-05",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
-            "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
+            "date_of_access": "2024-07",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.6",
+            "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
         "visualization": {
             "legend": "Fatality count",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_stand_1p_10k", 
-                "pgm": "dictionary_stand_1p" 
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "N/A", 
+                "data": "ln",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -113,28 +113,28 @@
         },
         "source": {
             "institution": {
-                "name": "Uppsala Conflict Data Program (UCDP)", 
+                "name": "Uppsala Conflict Data Program (UCDP)",
                 "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
             },
             "variable": {
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-05",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
-            "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
+            "date_of_access": "2024-07",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.6",
+            "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
         "visualization": {
             "legend": "Conflict event count",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_stand_1p_10k", 
+                "cm": "dictionary_stand_1p_10k",
                 "pgm": "dictionary_stand_1p"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "N/A", 
+                "data": "ln",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -148,28 +148,28 @@
         },
         "source": {
             "institution": {
-                "name": "Uppsala Conflict Data Program (UCDP)", 
+                "name": "Uppsala Conflict Data Program (UCDP)",
                 "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
             },
             "variable": {
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-05",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.3",
-            "citation": "Davies et al. 2022. 'Organized violence 1989-2021 and drone warfare.' Journal of Peace Research 59(4); Sundberg, Ralph & Erik Melander. 2013. 'Introducing the UCDP Georeferenced Event Dataset.' Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
+            "date_of_access": "2024-07",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.6",
+            "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
         "visualization": {
             "legend": "Conflict event count",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_stand_1p_10k", 
+                "cm": "dictionary_stand_1p_10k",
                 "pgm": "dictionary_stand_1p"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "N/A", 
+                "data": "ln",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -183,7 +183,7 @@
         },
         "source": {
             "institution": {
-                "name": "Varieties of Democracy (V-Dem) Project", 
+                "name": "Varieties of Democracy (V-Dem) Project",
                 "url": "<a href='https://www.v-dem.net/'>https://www.v-dem.net/</a>"
             },
             "variable": {
@@ -199,12 +199,12 @@
             "legend": "Rule of law index",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_1", 
+                "cm": "dictionary_index_0_1",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -218,7 +218,7 @@
         },
         "source": {
             "institution": {
-                "name": "Varieties of Democracy (V-Dem) Project", 
+                "name": "Varieties of Democracy (V-Dem) Project",
                 "url": "<a href='https://www.v-dem.net/'>https://www.v-dem.net/</a>"
             },
             "variable": {
@@ -234,12 +234,12 @@
             "legend": "Women political empowerment index",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_1", 
+                "cm": "dictionary_index_0_1",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -253,7 +253,7 @@
         },
         "source": {
             "institution": {
-                "name": "Varieties of Democracy (V-Dem) Project", 
+                "name": "Varieties of Democracy (V-Dem) Project",
                 "url": "<a href='https://www.v-dem.net/'>https://www.v-dem.net/</a>"
             },
             "variable": {
@@ -269,12 +269,12 @@
             "legend": "Civil liberties index",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_1", 
+                "cm": "dictionary_index_0_1",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -288,7 +288,7 @@
         },
         "source": {
             "institution": {
-                "name": "Varieties of Democracy (V-Dem) Project", 
+                "name": "Varieties of Democracy (V-Dem) Project",
                 "url": "<a href='https://www.v-dem.net/'>https://www.v-dem.net/</a>"
             },
             "variable": {
@@ -304,12 +304,12 @@
             "legend": "Access to justice index",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_1", 
-                "pgm": "N/A" 
+                "cm": "dictionary_index_0_1",
+                "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -323,7 +323,7 @@
         },
         "source": {
             "institution": {
-                "name": "Varieties of Democracy (V-Dem) Project", 
+                "name": "Varieties of Democracy (V-Dem) Project",
                 "url": "<a href='https://www.v-dem.net/'>https://www.v-dem.net/</a>"
             },
             "variable": {
@@ -339,12 +339,12 @@
             "legend": "Equal distribution of resources index",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_1", 
+                "cm": "dictionary_index_0_1",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -358,7 +358,7 @@
         },
         "source": {
             "institution": {
-                "name": "Varieties of Democracy (V-Dem) Project", 
+                "name": "Varieties of Democracy (V-Dem) Project",
                 "url": "<a href='https://www.v-dem.net/'>https://www.v-dem.net/</a>"
             },
             "variable": {
@@ -374,12 +374,12 @@
             "legend": "Liberal democracy index",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_1", 
-                "pgm": "N/A" 
+                "cm": "dictionary_index_0_1",
+                "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -393,7 +393,7 @@
         },
         "source": {
             "institution": {
-                "name": "World Bank", 
+                "name": "World Bank",
                 "url": "<a href='https://data.worldbank.org'>https://data.worldbank.org</a>"
             },
             "variable": {
@@ -409,12 +409,12 @@
             "legend": "GDP per capita (constant 2015 US$)",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_gdp", 
+                "cm": "dictionary_gdp",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "N/A", 
+                "data": "ln",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -428,7 +428,7 @@
         },
         "source": {
             "institution": {
-                "name": "World Bank", 
+                "name": "World Bank",
                 "url": "<a href='https://data.worldbank.org'>https://data.worldbank.org</a>"
             },
             "variable": {
@@ -444,12 +444,12 @@
             "legend": "Life expectancy (years)",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_100", 
-                "pgm": "N/A" 
+                "cm": "dictionary_index_0_100",
+                "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
@@ -463,7 +463,7 @@
         },
         "source": {
             "institution": {
-                "name": "World Bank", 
+                "name": "World Bank",
                 "url": "<a href='https://data.worldbank.org'>https://data.worldbank.org</a>"
             },
             "variable": {
@@ -479,12 +479,12 @@
             "legend": "Primary school enrollment (% net)",
             "colormap": "viridis_r",
             "dictionary": {
-                "cm": "dictionary_index_0_100", 
+                "cm": "dictionary_index_0_100",
                 "pgm": "N/A"
             },
             "transformation": {
-                    "data": "N/A", 
-                    "popup": "N/A", 
+                    "data": "N/A",
+                    "popup": "N/A",
                     "suffix": ""
             }
         }
@@ -498,7 +498,7 @@
         },
         "source": {
             "institution": {
-                "name": "World Bank", 
+                "name": "World Bank",
                 "url": "<a href='https://data.worldbank.org'>https://data.worldbank.org</a>"
             },
             "variable": {
@@ -514,12 +514,12 @@
             "legend": "Population (million people)",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_population", 
+                "cm": "dictionary_population",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "ln", 
-                "popup": "/1000000", 
+                "data": "ln",
+                "popup": "/1000000",
                 "suffix": ""
             }
         }
@@ -533,7 +533,7 @@
         },
         "source": {
             "institution": {
-                "name": "World Bank", 
+                "name": "World Bank",
                 "url": "<a href='https://data.worldbank.org'>https://data.worldbank.org</a>"
             },
             "variable": {
@@ -549,12 +549,12 @@
             "legend": "Infant mortality rate per 1,000 live births",
             "colormap": "viridis",
             "dictionary": {
-                "cm": "dictionary_imr", 
+                "cm": "dictionary_imr",
                 "pgm": "N/A"
             },
             "transformation": {
-                "data": "N/A", 
-                "popup": "N/A", 
+                "data": "N/A",
+                "popup": "N/A",
                 "suffix": ""
             }
         }
