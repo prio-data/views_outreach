@@ -1,8 +1,8 @@
 import os
 import requests
-import pandas as pd 
+import pandas as pd
 
-def generate_yearmonth_datestamps(start_year, start_month, end_year, end_month) -> list:
+def generate_API_datestamps(start_year, start_month, end_year, end_month) -> list:
     """This function takes start and end dates as arguments and creates a list of the year-months between them. 
     Each item in the list is returned as YYYY_MM, matching the datestamp format used in datasets in the VIEWS API.
     The output can be used for, e.g., loop functions to download a series of datasets from the VIEWS API.
@@ -37,12 +37,10 @@ def generate_yearmonth_datestamps(start_year, start_month, end_year, end_month) 
     
     except ValueError as e:
         print(f"Invalid input: {e}")
+        return []
 
-    if __name__ == "__main__":
-        generate_yearmonth_datestamps(start_year, start_month, end_year, end_month)
-    
 
-def download_dataset_from_api(models, periods, versions, loas, save_path):    
+def download_data_from_api(models, periods, versions, loas, save_path):    
     """Function to download a set of datasets from the VIEWS API. The function loops through and downloads (as csv) all combinations of models, versions, and levels of analysis that are available for the specified time period. It makes note of combinations that do not exist but keeps running until all combinations have been explored.
 
     Args:
@@ -68,6 +66,8 @@ def download_dataset_from_api(models, periods, versions, loas, save_path):
                         file_name = f"{dataset}_{loa}.csv"  # Create a unique filename
                         PATH = os.path.join(save_path, file_name)
                         
+                        print(f"Fetching data for {model}_{period}_{version}_{loa}...")
+
                         r = requests.get(views_url)
                         
                         if r.status_code == 404:
@@ -116,6 +116,3 @@ def download_dataset_from_api(models, periods, versions, loas, save_path):
                     except Exception as e:
                         print(f"An error occurred while processing model {model}, period {period}, version {version}, loa {loa}: {e}")
                         continue  # Skip to the next dataset
-
-    if __name__ == "__main__":
-        download_dataset_from_api(models, periods, versions, loas, save_path)
