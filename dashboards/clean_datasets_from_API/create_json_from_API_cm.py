@@ -72,6 +72,10 @@ for file_name in os.listdir(folder_path):
             # Rename specific columns if they exist
             df.rename(columns={"sc_cm_sb_dich_main": "main_dich", "main": "main_mean"}, inplace=True)
 
+            # Drop the 'surrogate_topic10' column if it exists
+            if 'surrogate_topic10' in df.columns:
+                df.drop(columns=['surrogate_topic10'], inplace=True)
+
             # Save the modified DataFrame to a new CSV file
             output_file_path = os.path.join(output_folder_path, file_name)
             df.to_csv(output_file_path, index=False)
