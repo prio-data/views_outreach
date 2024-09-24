@@ -1,0 +1,154 @@
+,country_id,country,year,main_mean,actuals_last_12months,predicted_change_in_percent,predicted_violence_category
+188,244,Mauritania,2025,10.0963,1.0,909.6299999999999,low-violence
+178,222,Egypt,2025,9.7565,1.0,875.6500000000001,low-violence
+174,213,Libya,2025,12.4152,2.0,520.76,low-violence
+61,67,Algeria,2025,13.9108,3.0,363.6933333333333,low-violence
+169,198,Taiwan,2025,7.4916,2.0,274.58,low-violence
+170,199,China,2025,3.1592000000000002,1.0,215.92000000000002,low-violence
+105,119,Oman,2025,23.1448,9.0,157.16444444444443,low-violence
+39,41,Cote d'Ivoire,2025,2.4587,1.0,145.86999999999998,low-violence
+149,164,Swaziland,2025,3.9044999999999996,2.0,95.22499999999998,low-violence
+148,163,South Africa,2025,9.6778,6.0,61.29666666666665,low-violence
+64,73,Tunisia,2025,6.0779,4.0,51.94749999999999,low-violence
+51,55,Djibouti,2025,2.9653,2.0,48.265,low-violence
+144,159,Comoros,2025,1.3723,1.0,37.230000000000004,low-violence
+12,13,Peru,2025,7.5727,6.0,26.211666666666673,low-violence
+183,234,United States,2025,5.5390999999999995,5.0,10.78199999999999,low-violence
+117,131,Saudi Arabia,2025,9.0801,9.0,0.8899999999999982,low-violence
+184,235,Uganda,2025,15.208,16.0,-4.949999999999999,low-violence
+9,10,Chile,2025,2.541,3.0,-15.300000000000002,low-violence
+10,11,Ecuador,2025,6.8077000000000005,9.0,-24.35888888888888,low-violence
+150,165,Angola,2025,13.8857,21.0,-33.87761904761904,low-violence
+187,243,Morocco,2025,4.4385,9.0,-50.68333333333332,low-violence
+111,125,Armenia,2025,4.9855,12.0,-58.454166666666666,low-violence
+112,126,Azerbaijan,2025,11.5308,430.0,-97.31841860465116,low-violence
+3,4,Venezuela,2025,6.6825,0.0,,low-violence
+123,137,Tajikistan,2025,4.246,0.0,,low-violence
+120,134,Kyrgyzstan,2025,3.9828,0.0,,low-violence
+142,157,Zambia,2025,3.9121,0.0,,low-violence
+186,242,Tanzania,2025,3.6462,0.0,,low-violence
+157,172,Madagascar,2025,2.8789,0.0,,low-violence
+88,101,Poland,2025,2.5918,0.0,,low-violence
+163,179,Papua New Guinea,2025,2.4248000000000003,0.0,,low-violence
+56,62,Jordan,2025,2.4066,0.0,,low-violence
+141,156,Rwanda,2025,2.2462999999999997,0.0,,low-violence
+143,158,Zimbabwe,2025,2.1551,0.0,,low-violence
+45,48,Guinea,2025,1.9577,0.0,,low-violence
+52,56,Eritrea,2025,1.9125,0.0,,low-violence
+128,143,North Korea,2025,1.8706999999999998,0.0,,low-violence
+151,166,Congo,2025,1.8084,0.0,,low-violence
+30,32,Honduras,2025,1.7871000000000001,0.0,,low-violence
+40,42,Ghana,2025,1.5604,0.0,,low-violence
+87,100,Hungary,2025,1.3149,0.0,,low-violence
+7,8,Bolivia,2025,1.2337,0.0,,low-violence
+161,177,Australia,2025,1.2197,0.0,,low-violence
+14,16,Guatemala,2025,1.2122,0.0,,low-violence
+2,3,Trinidad and Tobago,2025,1.2046999999999999,0.0,,low-violence
+102,116,Romania,2025,1.1783000000000001,0.0,,low-violence
+146,161,Malawi,2025,1.1635,0.0,,low-violence
+96,110,Belarus,2025,1.0959,0.0,,low-violence
+48,52,Senegal,2025,1.0678,0.0,,low-violence
+115,129,Kuwait,2025,0.9962,0.0,,low-violence
+49,53,Sierra Leone,2025,0.9561,0.0,,low-violence
+108,122,Turkmenistan,2025,0.9366,0.0,,low-violence
+80,92,Georgia,2025,0.9066,0.0,,low-violence
+25,27,Belize,2025,0.8935,0.0,,low-violence
+154,169,Gabon,2025,0.8867,0.0,,low-violence
+78,89,Bulgaria,2025,0.8622,0.0,,low-violence
+171,205,Malaysia,2025,0.8429,0.0,,low-violence
+109,123,Uzbekistan,2025,0.8225,0.0,,low-violence
+29,31,El Salvador,2025,0.7953,0.0,,low-violence
+89,102,Slovakia,2025,0.7933,0.0,,low-violence
+118,132,United Arab Emirates,2025,0.7913,0.0,,low-violence
+116,130,Qatar,2025,0.7871,0.0,,low-violence
+133,148,Laos,2025,0.7436,0.0,,low-violence
+125,139,Bhutan,2025,0.7223999999999999,0.0,,low-violence
+0,1,Guyana,2025,0.6952,0.0,,low-violence
+6,7,Argentina,2025,0.6679,0.0,,low-violence
+66,76,Equatorial Guinea,2025,0.6583,0.0,,low-violence
+54,58,Mongolia,2025,0.6415,0.0,,low-violence
+181,232,Kosovo,2025,0.5751000000000001,0.0,,low-violence
+23,25,Jamaica,2025,0.5561,0.0,,low-violence
+21,23,Dominican Republic,2025,0.5491,0.0,,low-violence
+11,12,Paraguay,2025,0.5277000000000001,0.0,,low-violence
+139,154,Botswana,2025,0.5222,0.0,,low-violence
+136,151,Vietnam,2025,0.504,0.0,,low-violence
+1,2,Suriname,2025,0.5024,0.0,,low-violence
+31,33,Nicaragua,2025,0.4979,0.0,,low-violence
+81,93,Greece,2025,0.4926,0.0,,low-violence
+98,112,Finland,2025,0.4918,0.0,,low-violence
+58,64,Norway,2025,0.4656,0.0,,low-violence
+113,127,Bahrain,2025,0.46540000000000004,0.0,,low-violence
+85,98,Czech Republic,2025,0.4622,0.0,,low-violence
+27,29,Costa Rica,2025,0.4576,0.0,,low-violence
+57,63,Kazakhstan,2025,0.452,0.0,,low-violence
+92,105,France,2025,0.4376,0.0,,low-violence
+132,147,Cambodia,2025,0.4353,0.0,,low-violence
+13,14,Uruguay,2025,0.427,0.0,,low-violence
+121,135,Nepal,2025,0.4239,0.0,,low-violence
+60,66,Sweden,2025,0.4197,0.0,,low-violence
+155,170,Namibia,2025,0.41659999999999997,0.0,,low-violence
+70,80,Sao Tome and Principe,2025,0.4104,0.0,,low-violence
+46,49,Guinea-Bissau,2025,0.4074,0.0,,low-violence
+32,34,Panama,2025,0.3939,0.0,,low-violence
+36,38,Ireland,2025,0.3769,0.0,,low-violence
+107,121,Sri Lanka,2025,0.3744,0.0,,low-violence
+28,30,Cuba,2025,0.3688,0.0,,low-violence
+145,160,Lesotho,2025,0.3685,0.0,,low-violence
+182,233,Serbia,2025,0.3631,0.0,,low-violence
+158,173,Mauritius,2025,0.3453,0.0,,low-violence
+101,115,Moldova,2025,0.3371,0.0,,low-violence
+166,182,Vanuatu,2025,0.32630000000000003,0.0,,low-violence
+131,146,South Korea,2025,0.3113,0.0,,low-violence
+153,168,Fiji,2025,0.3057,0.0,,low-violence
+95,109,Switzerland,2025,0.3018,0.0,,low-violence
+168,184,Germany,2025,0.2996,0.0,,low-violence
+41,43,Liberia,2025,0.296,0.0,,low-violence
+84,97,Austria,2025,0.2798,0.0,,low-violence
+127,142,Japan,2025,0.2777,0.0,,low-violence
+86,99,Denmark,2025,0.2761,0.0,,low-violence
+90,103,Slovenia,2025,0.2728,0.0,,low-violence
+67,77,Kiribati,2025,0.2723,0.0,,low-violence
+162,178,Nauru,2025,0.27190000000000003,0.0,,low-violence
+91,104,Belgium,2025,0.2694,0.0,,low-violence
+172,206,Singapore,2025,0.2649,0.0,,low-violence
+167,183,Canada,2025,0.2591,0.0,,low-violence
+75,85,Italy,2025,0.2578,0.0,,low-violence
+180,231,Montenegro,2025,0.2575,0.0,,low-violence
+104,118,Maldives,2025,0.2559,0.0,,low-violence
+43,46,Spain,2025,0.2539,0.0,,low-violence
+165,181,Tuvalu,2025,0.2445,0.0,,low-violence
+50,54,The Gambia,2025,0.2422,0.0,,low-violence
+164,180,Solomon Is.,2025,0.2371,0.0,,low-violence
+17,19,Dominica,2025,0.2367,0.0,,low-violence
+72,82,Albania,2025,0.2357,0.0,,low-violence
+73,83,Bosnia and Herzegovina,2025,0.23349999999999999,0.0,,low-violence
+33,35,Antigua and Barbuda,2025,0.2261,0.0,,low-violence
+42,45,Portugal,2025,0.2258,0.0,,low-violence
+18,20,Grenada,2025,0.2248,0.0,,low-violence
+34,36,St. Kitts and Nevis,2025,0.224,0.0,,low-violence
+4,5,Samoa,2025,0.22240000000000001,0.0,,low-violence
+156,171,New Zealand,2025,0.218,0.0,,low-violence
+38,40,Cape Verde,2025,0.21610000000000001,0.0,,low-violence
+5,6,Tonga,2025,0.2158,0.0,,low-violence
+37,39,United Kingdom,2025,0.2148,0.0,,low-violence
+35,37,Iceland,2025,0.2135,0.0,,low-violence
+94,108,Netherlands,2025,0.21259999999999998,0.0,,low-violence
+74,84,Croatia,2025,0.2109,0.0,,low-violence
+159,174,Seychelles,2025,0.2104,0.0,,low-violence
+24,26,Bahamas,2025,0.2102,0.0,,low-violence
+19,21,St. Lucia,2025,0.2101,0.0,,low-violence
+126,140,Brunei,2025,0.2073,0.0,,low-violence
+100,114,Lithuania,2025,0.2027,0.0,,low-violence
+20,22,St. Vincent and the Grenadines,2025,0.2021,0.0,,low-violence
+99,113,Latvia,2025,0.2015,0.0,,low-violence
+160,176,Timor Leste,2025,0.2004,0.0,,low-violence
+77,87,Malta,2025,0.1975,0.0,,low-violence
+79,90,Cyprus,2025,0.1946,0.0,,low-violence
+93,107,Luxembourg,2025,0.1916,0.0,,low-violence
+16,18,Barbados,2025,0.1865,0.0,,low-violence
+76,86,Macedonia,2025,0.1808,0.0,,low-violence
+129,144,Palau,2025,0.1802,0.0,,low-violence
+137,152,Marshall Is.,2025,0.1764,0.0,,low-violence
+138,153,Micronesia,2025,0.1759,0.0,,low-violence
+97,111,Estonia,2025,0.175,0.0,,low-violence

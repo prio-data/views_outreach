@@ -76,6 +76,9 @@ for file_name in os.listdir(folder_path):
             if 'surrogate_topic10' in df.columns:
                 df.drop(columns=['surrogate_topic10'], inplace=True)
 
+            # Drop all columns that start with "surrogate_"
+            df = df.loc[:, ~df.columns.str.startswith("surrogate_")]
+
             # Save the modified DataFrame to a new CSV file
             output_file_path = os.path.join(output_folder_path, file_name)
             df.to_csv(output_file_path, index=False)
