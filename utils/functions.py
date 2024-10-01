@@ -132,20 +132,19 @@ def download_multiple_forecasts_from_api(models, periods, versions, loas, save_p
                         continue  # Skip to the next dataset
 
 
-# Functions to fetch specific datasets from the VIEWS API (forecasts or predictors)
+# Function to fetch specific datasets from the VIEWS API (forecasts or predictors)
 
-def fetch_forecasts_from_api(dataset, loa, filters, csv, save_path):
-    """Function to fetch and/or download single forecast datasets from the VIEWS API. Results can be downloaded as a csv file (optional). Returns a pandas dataframe. 
+def fetch_data_from_api(api_call, csv, save_path):
+    """Function to fetch and/or download single datasets from the VIEWS API. Results can be downloaded as a csv file (optional). Returns a pandas dataframe. 
     Args:
-        dataset (str): Forecast dataset to fetch from the VIEWS API, provided as '{model}_{year}_{month}_{version}', e.g. 'fatalities002_2024_07_t01'. The default version of a dataset is 't01', but in case of corrections to published datasets, other versions may be available (e.g. 't02', 't03', etc.). Consult the VIEWS API wiki for available datasets (see the VIEWS_API GitHub repository).
+        api_call (str): API call to fetch data from the VIEWS API, without the csv flag. Consult the VIEWS API wiki for available datasets, filters, and correct specification. Without filters, the call should be provided in the format 'https://api.viewsforecasting.org/{dataset}/{loa}', where forecast datasets take the form of '{model}_{datestamp}_{version}', e.g. 'https://api.viewsforecasting.org/fatalities002_2024_08_t01/cm'. Predictor datasets, in turn, take the form of 'predictors_{model}_{datestamp}/{loa}', e.g. 'predictors_fatalities002_0000_00/cm', where '0000_00' refers to the rolling dataset that is updated monthly. In static datasets for archived models, '0000_00' is replaced by 'YYYY_MM', corresponding to the EndOfHistory in that dataset. 
 
-        loa (str): Level of analysis ('cm' or 'pgm').
-        
-        filters (str): Optional filters to apply to the dataset, such as type of violence (tv, currently only 'sb') and indicator (e.g. 'main_mean'). Consult the VIEWS API wiki for available options and correct specification. The filters must be provided as a string separated by forward slashes, e.g. 'sb/main_mean', in the following order: {tv}/{indicator}/{more_filters}. 
- 
         csv (bool): If True, the function will save the final dataframe to a csv file. 
 
         save_path (str): The path to your preferred save folder, starting after 'root/home/'.
+    
+    Returns:
+        df: Pandas dataframe with the fetched data.
 
     Dependencies:
     import os
@@ -154,19 +153,6 @@ def fetch_forecasts_from_api(dataset, loa, filters, csv, save_path):
     """
 
     try:
-        # Create API call
-        api_call = f"https://api.viewsforecasting.org/{dataset}/{loa}/sb/{filters}"
-
-        # Create filename
-        if filters == "":
-            file_name = f"{dataset}_{loa}.csv"
-        else: 
-            file_name = f"{dataset}_{loa}_filtered.csv"
-        
-        # Create path
-        home = os.path.expanduser("~")
-        PATH = os.path.join(home, save_path, file_name)
-    
         # Print status
         print(f"Fetching data for {api_call}...")
         
@@ -208,7 +194,14 @@ def fetch_forecasts_from_api(dataset, loa, filters, csv, save_path):
         df.rename(columns={'name':'country'},inplace=True)
         
         # Save data to csv, or return df
-        if csv is True:
+        if csv:
+            # Create filename
+            file_name = "VIEWS_data.csv"
+            
+            # Create path
+            home = os.path.expanduser("~")
+            PATH = os.path.join(home, save_path, file_name)
+        
             df.to_csv(PATH, index=False)
             print(f"Data for {api_call} saved as csv to {PATH}.")
         
@@ -223,112 +216,21 @@ def fetch_forecasts_from_api(dataset, loa, filters, csv, save_path):
         print(f"An error occurred while processing {api_call}: {e}")
         return  # Skip to the next dataset
     
-
-
-def fetch_features_from_api(dataset, loa, filters, csv, save_path):
-    """Function to fetch and/or download single predictor/feature datasets from the VIEWS API. Results can be downloaded as a csv file (optional). Returns a pandas dataframe. 
-    
-    Args:
-        dataset (str): Predictor dataset to fetch from the VIEWS API, provided as 'predictors_{model}_0000_00', e.g. 'predictors_fatalities002_0000_00'. '0000_00' represents the rolling dataset that is updated each month with the latest input data. In static datasets for archived models, '0000_00' is replaced by 'YYYY_MM', corresponding to the last month of data in the dataset. Consult the VIEWS API wiki for a list of available datasets (see the VIEWS_API GitHub repository).
-
-        loa (str): Level of analysis ('cm' or 'pgm').
-        
-        filters (str): Optional filters to apply to the dataset, such as choice of indicator (e.g. 'ucdp_ged_sb_best_su'). For use of more filters than indicator, filters must be provided as a string separated by forward slashes. Consult the VIEWS API wiki for available options and correct specification. If no filters are needed, provide an empty string.
- 
-        csv (bool): If True, the function will save the final dataframe to a csv file. 
-
-        save_path (str): The path to your preferred save folder, starting after 'root/home/'.
-
-    Dependencies: 
-    import os
-    import requests
-    import pandas as pd 
-    """
-
-    try:
-        api_call = f"https://api.viewsforecasting.org/{dataset}/{loa}/px/{filters}"
-
-        # Create filename
-        if filters == "":
-            file_name = f"{dataset}_{loa}.csv" 
-        else: 
-            file_name = f"{dataset}_{loa}_filtered.csv" 
-
-        # Create path
-        home = os.path.expanduser("~")
-        PATH = os.path.join(home, save_path, file_name)
-    
-        print(f"Fetching data for {dataset}/{loa}/px/{filters}...")
-
-        # Fetch data
-        r = requests.get(api_call)
-        
-        if r.status_code == 404 or r.status_code == 422:
-            print(f"Dataset {dataset} does not exist ({r.status_code}). Try again.")
-            return  # Skip to the next dataset
-
-        if r.status_code != 200:
-            print(f"Failed to fetch data: Status code {r.status_code}. Try again")
-            return  # Skip to the next dataset
-
-        page_data = r.json()
-
-        if 'data' not in page_data:
-            print(f"'data' key not found in the response for {api_call}. Response keys: {page_data.keys()}")
-            return  # Skip to the next dataset
-
-        master_list = page_data['data']
-        
-        while page_data.get('next_page', ''):
-            r = requests.get(page_data['next_page'])
-            if r.status_code == 404:
-                print(f"Next page for {dataset} does not exist (404 error). Skipping pagination.")
-                break  # Break the loop and stop pagination
-            if r.status_code != 200:
-                print(f"Failed to fetch the next page for {api_call}. Status code {r.status_code}")
-                break
-            page_data = r.json()
-            if 'data' not in page_data:
-                print(f"'data' key not found in a paginated response for {api_call}.")
-                break
-            master_list += page_data['data']
-        
-        # Create dataframe
-        df = pd.DataFrame(master_list)
-        df.rename(columns={'name':'country'},inplace=True)
-
-        print(df)
-
-        
-        # Save data to csv, and return df
-        if csv is True:
-            df.to_csv(PATH, index=False)
-            print(f"Data for {api_call} saved as csv to {PATH}.")
-        
-        print(f"Data for {api_call} saved to df.")
-        return df
-
-    except requests.exceptions.RequestException as e:
-        print(f"Request failed for {api_call}: {e}")
-        return  # Skip to the next dataset
-
-    except Exception as e:
-        print(f"An error occurred while processing {api_call}: {e}")
-        return  # Skip to the next dataset
-
-
 
 # Functions for creating watchlists
 
-def forecasts_from_cm_to_cy(forecasts, year, csv, save_folder):
+def forecasts_from_cm_to_cy(forecasts, year, csv, save_path):
     """Takes a dataframe with country-month forecasts from the VIEWS API and aggregates it to country-year. Options available to filter out results for a single indicator and/or year. Creates a csv file with the results (optional) and returns a pandas dataframe. 
     
     Args:
-        forecasts (df): The forecast dataframe to use, fetched from the VIEWS API. The 'fetch_forecasts_from_api' function can be used to retrieve the data. 
+        forecasts (df): The forecast dataframe to use, fetched from the VIEWS API. The 'fetch_data_from_api()' function can be used to retrieve the data. 
         
         csv (bool): If True, the function will create a csv file with the results. 
 
         save_path (str): The path to your preferred save folder, starting after 'root/home/'.
+
+    Returns:
+        df: Dataframe with country-year forecasts, aggregated from country-month forecasts.
 
     Dependencies:
     import os
@@ -348,9 +250,9 @@ def forecasts_from_cm_to_cy(forecasts, year, csv, save_folder):
     if year == "": 
         print('No year was specified. Results have been grouped by year and saved to df, displayed here:')
         print(forecasts_by_cy)
-        if csv == True:
+        if csv:
             file_name = 'forecasts_by_country-year'
-            save_path = os.path.join(save_folder, file_name)
+            save_path = os.path.join(save_path, file_name)
             forecasts_by_cy.to_csv(f'{save_path}.csv')
             print(f"{file_name} saved as csv to {save_folder}.")
         return forecasts_by_cy
@@ -358,42 +260,51 @@ def forecasts_from_cm_to_cy(forecasts, year, csv, save_folder):
         filtered_forecasts_by_cy = forecasts_by_cy[forecasts_by_cy['year'].astype(str) == year]
         print(f'The data has been filtered for {year} and saved to df. Here is the result:')
         print(filtered_forecasts_by_cy)
-        if csv == True:
+        if csv:
             file_name = f'forecasts_by_country-year_{year}'
-            save_path = os.path.join(save_folder, file_name)
+            save_path = os.path.join(save_path, file_name)
             filtered_forecasts_by_cy.to_csv(f'{save_path}.csv')
-            print(f"{file_name} saved as csv to {save_folder}.")
+            print(f"{file_name} saved as csv to {save_path}.")
         return filtered_forecasts_by_cy
         
 
-def get_sum_of_actuals_for_last_12months(predictor_dataset, loa, feature, csv, save_folder):
+def get_sum_of_actuals_last_12months_by_c(predictor_df, feature, csv, save_path):
+    """_summary_
 
-    # Fetch actuals in sb conflict
-    actuals = fetch_features_from_api(predictor_dataset, loa, feature, csv, save_folder) 
+    Args:
+        predictor_dataset (df): Dataframe with predictor data fetched from the VIEWS API. Use the 'fetch_data_from_api()' function to retrieve the data in the correct format.
+        
+        feature (str): Column name for the feature to sum from the predictor_dataset. 
+       
+        csv (bool): If True, the function will save the final dataframe to a csv file.
+        
+        save_path (str): The path to your preferred save folder, starting after 'root/home/'.
+
+    Returns:
+        df: Pandas dataframe with the sum of actuals (for the chosen feature) for the last 12 months, grouped by country.
+    """
 
     # Get last 12 month ids from predictor dataset
-    last_12_month_ids = actuals['month_id'].drop_duplicates().nlargest(12)
+    last_12_month_ids = predictor_df['month_id'].drop_duplicates().nlargest(12)
 
     # Filter the actuals dataframe based on the last 12 unique month_id values
-    actuals_last_12months = actuals[actuals['month_id'].isin(last_12_month_ids)][['country_id', 'month_id', 'country', 'year', 'month', feature]]
+    actuals_last_12months = predictor_df[predictor_df['month_id'].isin(last_12_month_ids)][['country_id', 'month_id', 'country', 'year', 'month', feature]]
 
     # Sum the actuals for the last 12 months, grouping data by country, rename result column to understandable name
-    sum_actuals_last_12months = actuals_last_12months.groupby(['country_id', 'country'], as_index=False)[feature].sum().rename(columns={feature:'actuals_last_12months'})
+    sum_actuals_last_12months_by_c = actuals_last_12months.groupby(['country_id', 'country'], as_index=False)[feature].sum().rename(columns={feature:'actuals_last_12months'})
 
-    if csv == True:
+    if csv:
         file_name = 'sum_actuals_last_12months.csv'
-        save_path = os.path.join(save_folder, file_name)
-        sum_actuals_last_12months.to_csv(f'{save_path}.csv')
-        print(f"{file_name} saved to {save_folder}.")
+        save_path = os.path.join(save_path, file_name)
+        sum_actuals_last_12months_by_c.to_csv(f'{save_path}.csv')
+        print(f"{file_name} saved to {save_path}.")
 
-    return sum_actuals_last_12months
+    return sum_actuals_last_12months_by_c
 
 
-def filter_forecasts_by_criteria(forecasts, qualifying_countries, csv, save_folder):
-    """Takes a forecast dataframe retrieved from the VIEWS API and filters out results that meet a preset criteria. The criteria for filtering are based on the 'qualifying_countries' dataframe, which should contain a column with (only) the countries that meet the criteria, and other colum(s) with data representing the criteria itself (e.g. actuals). The two dataframes will be merged into one based on the 'country_id' column.
-    
-    The function returns a pandas dataframe with the filtered results, and – if selected – saves the results to a csv file.
-    
+def filter_forecasts_by_criteria(forecasts_df, qualifying_countries_df, csv, save_path):
+    """Takes a forecast dataframe retrieved from the VIEWS API and filters out results that meet a preset criteria. The criteria for filtering are based on the 'qualifying_countries' dataframe, which should contain a column with (only) the countries that meet the criteria, and other colum(s) with data representing the criteria itself (e.g. actuals). The two dataframes will be merged into one based on the 'country_id' column. Returns a pandas dataframe with the forecasts for the qualifying countries, for all categories of violence. 
+        
     Args:
         forecasts: The forecast dataframe to use, fetched from the VIEWS API. Use the 'fetch_forecasts_from_api()' and, if relevant, the 'forecasts_from_cm_to_cy()' functions to retrieve the data in the correct format.
 
@@ -403,6 +314,9 @@ def filter_forecasts_by_criteria(forecasts, qualifying_countries, csv, save_fold
 
         save_path (str): The path to your preferred save folder, starting after 'root/home/'.
 
+    Returns:    
+        df: A pandas dataframe with the forecasts for the qualifying countries, for all categories of violence. The dataframe is sorted by highest predicted fatalities in descending order.
+
     Dependencies:
     import os
     import requests
@@ -411,33 +325,35 @@ def filter_forecasts_by_criteria(forecasts, qualifying_countries, csv, save_fold
     """
 
     # Filter our forecast for qualifying countries 
-    filtered_forecasts = forecasts[forecasts['country_id'].isin(qualifying_countries['country_id'])][['country_id', 'country', 'year', 'main_mean']]
+    filtered_forecasts = forecasts_df[forecasts_df['country_id'].isin(qualifying_countries_df['country_id'])][['country_id', 'country', 'year', 'main_mean']]
 
     # Merge the two dataframes to store forecasts as well as data for the inclusion criteria
-    merged_dfs = pd.merge(filtered_forecasts, qualifying_countries, on=['country_id', 'country'], how='left').sort_values(by=['main_mean'], ascending=False)
+    merged_dfs = pd.merge(filtered_forecasts, qualifying_countries_df, on=['country_id', 'country'], how='left').sort_values(by=['main_mean'], ascending=False)
 
     if csv == True:
             file_name = f'forecasts_by_criteria'
-            save_path = os.path.join(save_folder, file_name)
+            save_path = os.path.join(save_path, file_name)
             merged_dfs.to_csv(f'{save_path}.csv')
-            print(f"Forecasts that meet selected criteria saved as csv to {save_folder}.")
+            print(f"Forecasts that meet selected criteria saved as csv to {save_path}.")
     return merged_dfs
 
 
-def watchlist_relative_change_in_sb_fatalities(forecasts_by_cy, predictor_dataset, category, csv, save_folder):
-    # , loa, indicator, feature, year, csv, save_folder
-    """Takes a country-year forecast dataframe and a country-month actuals dataframe fetched from the VIEWS API, and calculates the predicted change in state-based fatalities for each country-year as compared to the sum of sb fatalities per country over the last 12 months. The function returns a set of csv files for the full dataset as well as results filtered by the predicted intensity of violence in the given country-year. 
+def watchlist_relative_change_in_fatalities(forecasts_by_cy, sum_actuals_last_12months_by_c, category, csv, save_folder):
+    """Takes a country-year forecast dataframe and a country-month actuals dataframe fetched from the VIEWS API, and calculates the predicted change in state-based fatalities for each country-year as compared to the sum of sb fatalities per country over the last 12 months. The function produces a set of csv files for (1) the full dataset with all categories, and (2) results filtered by each predicted intensity of violence in the given country-year. It returns a pandas dataframe with the results for all categories of violence.
     
     Args:
         cy_forecasts (df): Country-year forecasts dataframe, preferably produced by the 'fetch_cy_forecasts()' function to ensure correct column names. The country name column must be called "country".
 
-        predictor_dataset (str): Name of predictor/feature dataset from which to retrieve actuals, e.g. 'predictors_fatalities002_0000_00'. Consult the VIEWS API wiki for available datasets (see the VIEWS_API GitHub repository).
+        actuals_last_12_months_by_cy (df): Actuals dataframe with the sum of fatalities over the past 12 months per country, preferably produced by the 'get_sum_of_actuals_for_last_12months()' function to ensure correct column names. The country name column must be called "country".
 
         category: (str): Filter the results by predicted intensity of violence in the given year. Choose between: 'low' (less than 25 BRDs), 'medium' (25-99 BRDs), 'high' (100-999), 'war' (1000+). If you leave this empty, the function will return results for all categories as one dataframe. 
 
         csv (bool): If True, the function will save the selected data to a csv file. Else, it will only return a pandas dataframe.
 
         save_folder (str): The path to your preferred save folder, starting after 'root/home/'.
+    
+    Returns:
+        df: A pandas dataframe with the predicted change in fatalities for each country-year as compared to the sum of fatalities per country over the last 12 months, for all categories of predicted conflict intensity. The dataframe is sorted by the percent change in descending order.
 
     Dependencies:
     import os
@@ -446,10 +362,8 @@ def watchlist_relative_change_in_sb_fatalities(forecasts_by_cy, predictor_datase
     import numpy as np
     """
 
-    actuals_last_12months = get_sum_of_actuals_for_last_12months(predictor_dataset, 'cm', 'ucdp_ged_sb_best_sum', False, save_folder)
-
     # Merge actuals_last_12months with country-year forecasts
-    prep_for_predicted_change = pd.merge(forecasts_by_cy, actuals_last_12months, on=['country_id', 'country'], how='left')
+    prep_for_predicted_change = pd.merge(forecasts_by_cy, sum_actuals_last_12months_by_c, on=['country_id', 'country'], how='left')
     prep_for_predicted_change = prep_for_predicted_change.sort_values(by=['main_mean'], ascending=False)
 
 
@@ -478,24 +392,24 @@ def watchlist_relative_change_in_sb_fatalities(forecasts_by_cy, predictor_datase
     if category == "":
         for category in unique_categories:
             category_df = sorted_predicted_change[sorted_predicted_change['predicted_violence_category'] == category].sort_values(by=['predicted_change_in_percent'], ascending=False)
-            if csv == True:
+            if csv:
                 file_name_cat = f'cy_forecasts_predictedchange_{category}_intensity'
                 save_path = os.path.join(save_folder, file_name_cat)
                 category_df.to_csv(f'{save_path}.csv')
-                print(f'Saved {file_name_cat} as csv to {save_folder}.')
-        if csv == True:
+                print(f'Saved {file_name_cat} as csv to {save_path}.')
+        if csv:
             file_name_full = f'cy_forecasts_predictedchange_all_categories'
             save_path = os.path.join(save_folder, file_name_full)
             sorted_predicted_change.to_csv(f'{save_path}.csv')
-            print(f'Saved {file_name_full} as csv to {save_folder}.')
+            print(f'Saved {file_name_full} as csv to {save_path}.')
         return sorted_predicted_change
     
     if category != "": # If a category has been selected, return the data for that category only
         category_df = sorted_predicted_change[sorted_predicted_change['predicted_violence_category'] == category].sort_values(by=['predicted_change_in_percent'], ascending=False)
-        if csv == True:
+        if csv:
             file_name_cat = f'cy_forecasts_predictedchange_{category}_intensity'
             save_path = os.path.join(save_folder, file_name_cat)
             category_df.to_csv(f'{save_path}.csv')
-            print(f'Saved {file_name_cat} as csv to {save_folder}.')
+            print(f'Saved {file_name_cat} as csv to {save_path}.')
         return category_df
 
