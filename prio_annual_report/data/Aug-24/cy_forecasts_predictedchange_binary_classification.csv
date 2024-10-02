@@ -1,0 +1,192 @@
+,country_id,country,year,main_mean,actuals_last_12months,predicted_change_in_percent,predicted_violence_category
+47,222,Egypt,2025,7.8316,1.0,683.16,no-conflict
+51,244,Mauritania,2025,6.2919,1.0,529.19,no-conflict
+44,213,Libya,2025,9.829,2.0,391.45000000000005,no-conflict
+0,220,Syria,2025,9702.4852,2011.0,382.47067130780704,conflict
+6,136,Pakistan,2025,4726.6709,1325.0,256.72987924528303,conflict
+49,198,Taiwan,2025,7.0559,2.0,252.79500000000002,no-conflict
+18,133,Afghanistan,2025,457.7155,158.0,189.69335443037977,conflict
+64,199,China,2025,2.7047,1.0,170.47,no-conflict
+4,120,Somalia,2025,6016.7227,2232.0,169.56642921146954,conflict
+48,67,Algeria,2025,7.7253,3.0,157.51,no-conflict
+27,9,Brazil,2025,53.8423,23.0,134.09695652173914,conflict
+32,17,Mexico,2025,41.4625,18.0,130.34722222222223,conflict
+68,41,Cote d'Ivoire,2025,2.1045,1.0,110.44999999999999,no-conflict
+13,223,India,2025,767.5427999999999,373.0,105.77554959785522,conflict
+3,79,Nigeria,2025,6746.781,3374.0,99.96387077652638,conflict
+26,138,Bangladesh,2025,65.4523,34.0,92.50676470588233,conflict
+34,81,Togo,2025,37.1,21.0,76.66666666666667,conflict
+59,164,Swaziland,2025,3.2954,2.0,64.77,no-conflict
+10,50,Mali,2025,2100.2452,1322.0,58.86877458396368,conflict
+17,60,Iraq,2025,497.5277,314.0,58.44831210191083,conflict
+7,57,Ethiopia,2025,4351.0372,2768.0,57.19065028901733,conflict
+5,47,Burkina Faso,2025,5029.084,3231.0,55.65100588053233,conflict
+16,69,Cameroon,2025,513.9955,346.0,48.553612716763006,conflict
+39,119,Oman,2025,13.3058,9.0,47.84222222222222,no-conflict
+19,145,Philippines,2025,349.31,243.0,43.748971193415635,conflict
+45,163,South Africa,2025,8.3713,6.0,39.52166666666666,no-conflict
+11,167,"Congo, DRC",2025,1092.6345000000001,818.0,33.57389975550124,conflict
+8,149,Myanmar,2025,3422.3752,2602.0,31.52863950807071,conflict
+31,150,Thailand,2025,43.3555,34.0,27.51617647058823,conflict
+66,55,Djibouti,2025,2.5425,2.0,27.125,no-conflict
+77,159,Comoros,2025,1.2508,1.0,25.07999999999999,no-conflict
+23,162,Mozambique,2025,170.2817,140.0,21.629785714285717,conflict
+22,28,Colombia,2025,173.94,145.0,19.95862068965517,conflict
+12,78,Niger,2025,976.981,820.0,19.144024390243903,conflict
+50,13,Peru,2025,6.9907,6.0,16.51166666666667,no-conflict
+14,65,Russia,2025,727.4611,649.0,12.089537750385206,conflict
+54,73,Tunisia,2025,4.4455,4.0,11.1375,no-conflict
+15,124,Yemen,2025,632.894,575.0,10.068521739130436,conflict
+35,246,South Sudan,2025,28.2094,26.0,8.497692307692303,conflict
+36,96,Turkey,2025,26.327199999999998,26.0,1.2584615384615296,conflict
+46,131,Saudi Arabia,2025,8.2623,9.0,-8.196666666666669,no-conflict
+25,237,Kenya,2025,105.6737,116.0,-8.901982758620692,conflict
+65,10,Chile,2025,2.6032,3.0,-13.226666666666661,no-conflict
+21,70,Central African Republic,2025,248.5956,299.0,-16.857658862876256,conflict
+9,245,Sudan,2025,3276.4317,3965.0,-17.36616141235813,conflict
+40,235,Uganda,2025,12.8737,16.0,-19.539375000000003,no-conflict
+20,94,Lebanon,2025,292.6923,368.0,-20.46404891304348,conflict
+56,234,United States,2025,3.7619000000000002,5.0,-24.761999999999993,no-conflict
+28,74,Benin,2025,51.0869,69.0,-25.961014492753627,conflict
+24,24,Haiti,2025,120.2681,170.0,-29.254058823529412,conflict
+29,209,Indonesia,2025,46.7898,72.0,-35.01416666666667,conflict
+52,11,Ecuador,2025,5.4685,9.0,-39.23888888888889,no-conflict
+41,165,Angola,2025,11.6145,21.0,-44.69285714285714,no-conflict
+53,125,Armenia,2025,4.8576,11.0,-55.84,no-conflict
+58,243,Morocco,2025,3.4587,9.0,-61.56999999999999,no-conflict
+30,214,Chad,2025,44.4069,120.0,-62.994249999999994,conflict
+33,128,Iran,2025,38.7131,164.0,-76.39445121951219,conflict
+2,218,Israel,2025,7380.0011,35802.0,-79.38662337299593,conflict
+37,155,Burundi,2025,23.0289,122.0,-81.1238524590164,no-conflict
+1,117,Ukraine,2025,8498.5952,52174.0,-83.71105301491166,conflict
+42,126,Azerbaijan,2025,11.4531,430.0,-97.33648837209302,no-conflict
+38,4,Venezuela,2025,15.3519,0.0,,no-conflict
+43,172,Madagascar,2025,10.2329,0.0,,no-conflict
+55,137,Tajikistan,2025,3.8466,0.0,,no-conflict
+57,134,Kyrgyzstan,2025,3.5665999999999998,0.0,,no-conflict
+60,16,Guatemala,2025,3.1592000000000002,0.0,,no-conflict
+61,157,Zambia,2025,3.0951999999999997,0.0,,no-conflict
+62,242,Tanzania,2025,3.0227,0.0,,no-conflict
+63,62,Jordan,2025,2.761,0.0,,no-conflict
+67,56,Eritrea,2025,2.3458,0.0,,no-conflict
+69,101,Poland,2025,2.0613,0.0,,no-conflict
+70,156,Rwanda,2025,1.8625,0.0,,no-conflict
+71,179,Papua New Guinea,2025,1.8369,0.0,,no-conflict
+72,158,Zimbabwe,2025,1.7112,0.0,,no-conflict
+73,48,Guinea,2025,1.567,0.0,,no-conflict
+74,166,Congo,2025,1.3911,0.0,,no-conflict
+75,132,United Arab Emirates,2025,1.3908,0.0,,no-conflict
+76,42,Ghana,2025,1.3441,0.0,,no-conflict
+78,143,North Korea,2025,1.2357,0.0,,no-conflict
+79,177,Australia,2025,1.1942,0.0,,no-conflict
+80,100,Hungary,2025,1.1572,0.0,,no-conflict
+81,25,Jamaica,2025,1.0953,0.0,,no-conflict
+82,27,Belize,2025,1.0775000000000001,0.0,,no-conflict
+83,116,Romania,2025,1.0269,0.0,,no-conflict
+84,8,Bolivia,2025,1.0179,0.0,,no-conflict
+85,3,Trinidad and Tobago,2025,1.0092,0.0,,no-conflict
+86,52,Senegal,2025,0.9627,0.0,,no-conflict
+87,53,Sierra Leone,2025,0.8935,0.0,,no-conflict
+88,122,Turkmenistan,2025,0.8931,0.0,,no-conflict
+89,129,Kuwait,2025,0.8531,0.0,,no-conflict
+90,32,Honduras,2025,0.8386,0.0,,no-conflict
+91,123,Uzbekistan,2025,0.8293,0.0,,no-conflict
+92,161,Malawi,2025,0.8284,0.0,,no-conflict
+93,31,El Salvador,2025,0.7464,0.0,,no-conflict
+94,92,Georgia,2025,0.7306,0.0,,no-conflict
+95,102,Slovakia,2025,0.7266,0.0,,no-conflict
+96,89,Bulgaria,2025,0.6798,0.0,,no-conflict
+97,110,Belarus,2025,0.6636,0.0,,no-conflict
+98,7,Argentina,2025,0.6398,0.0,,no-conflict
+99,205,Malaysia,2025,0.6275,0.0,,no-conflict
+100,148,Laos,2025,0.5883,0.0,,no-conflict
+101,169,Gabon,2025,0.5849,0.0,,no-conflict
+102,130,Qatar,2025,0.5087,0.0,,no-conflict
+103,66,Sweden,2025,0.5068,0.0,,no-conflict
+104,1,Guyana,2025,0.5064,0.0,,no-conflict
+105,232,Kosovo,2025,0.4983,0.0,,no-conflict
+106,76,Equatorial Guinea,2025,0.4945,0.0,,no-conflict
+107,58,Mongolia,2025,0.49319999999999997,0.0,,no-conflict
+108,139,Bhutan,2025,0.4823,0.0,,no-conflict
+109,23,Dominican Republic,2025,0.4809,0.0,,no-conflict
+110,112,Finland,2025,0.4592,0.0,,no-conflict
+111,12,Paraguay,2025,0.4475,0.0,,no-conflict
+112,2,Suriname,2025,0.4453,0.0,,no-conflict
+113,64,Norway,2025,0.4393,0.0,,no-conflict
+114,63,Kazakhstan,2025,0.426,0.0,,no-conflict
+115,135,Nepal,2025,0.42,0.0,,no-conflict
+116,14,Uruguay,2025,0.4085,0.0,,no-conflict
+117,33,Nicaragua,2025,0.40359999999999996,0.0,,no-conflict
+118,184,Germany,2025,0.39990000000000003,0.0,,no-conflict
+119,105,France,2025,0.39299999999999996,0.0,,no-conflict
+120,151,Vietnam,2025,0.375,0.0,,no-conflict
+121,38,Ireland,2025,0.36360000000000003,0.0,,no-conflict
+122,80,Sao Tome and Principe,2025,0.3578,0.0,,no-conflict
+123,49,Guinea-Bissau,2025,0.3568,0.0,,no-conflict
+124,147,Cambodia,2025,0.3548,0.0,,no-conflict
+125,93,Greece,2025,0.35409999999999997,0.0,,no-conflict
+126,233,Serbia,2025,0.3489,0.0,,no-conflict
+127,121,Sri Lanka,2025,0.3436,0.0,,no-conflict
+128,34,Panama,2025,0.3372,0.0,,no-conflict
+129,83,Bosnia and Herzegovina,2025,0.3357,0.0,,no-conflict
+130,154,Botswana,2025,0.3317,0.0,,no-conflict
+131,170,Namibia,2025,0.3312,0.0,,no-conflict
+132,29,Costa Rica,2025,0.3279,0.0,,no-conflict
+133,30,Cuba,2025,0.32589999999999997,0.0,,no-conflict
+134,127,Bahrain,2025,0.3126,0.0,,no-conflict
+135,115,Moldova,2025,0.3114,0.0,,no-conflict
+136,97,Austria,2025,0.3099,0.0,,no-conflict
+137,173,Mauritius,2025,0.3061,0.0,,no-conflict
+138,109,Switzerland,2025,0.275,0.0,,no-conflict
+139,146,South Korea,2025,0.2703,0.0,,no-conflict
+140,160,Lesotho,2025,0.262,0.0,,no-conflict
+141,103,Slovenia,2025,0.2602,0.0,,no-conflict
+142,182,Vanuatu,2025,0.2493,0.0,,no-conflict
+143,99,Denmark,2025,0.2491,0.0,,no-conflict
+144,142,Japan,2025,0.2472,0.0,,no-conflict
+145,43,Liberia,2025,0.24710000000000001,0.0,,no-conflict
+146,85,Italy,2025,0.2334,0.0,,no-conflict
+147,104,Belgium,2025,0.231,0.0,,no-conflict
+148,46,Spain,2025,0.2194,0.0,,no-conflict
+149,98,Czech Republic,2025,0.2184,0.0,,no-conflict
+150,183,Canada,2025,0.218,0.0,,no-conflict
+151,206,Singapore,2025,0.214,0.0,,no-conflict
+152,168,Fiji,2025,0.2138,0.0,,no-conflict
+153,82,Albania,2025,0.2091,0.0,,no-conflict
+154,35,Antigua and Barbuda,2025,0.20879999999999999,0.0,,no-conflict
+155,36,St. Kitts and Nevis,2025,0.2082,0.0,,no-conflict
+156,19,Dominica,2025,0.20779999999999998,0.0,,no-conflict
+157,84,Croatia,2025,0.20600000000000002,0.0,,no-conflict
+158,77,Kiribati,2025,0.2024,0.0,,no-conflict
+159,54,The Gambia,2025,0.2016,0.0,,no-conflict
+160,45,Portugal,2025,0.2008,0.0,,no-conflict
+161,231,Montenegro,2025,0.1993,0.0,,no-conflict
+162,178,Nauru,2025,0.199,0.0,,no-conflict
+163,181,Tuvalu,2025,0.197,0.0,,no-conflict
+164,20,Grenada,2025,0.1956,0.0,,no-conflict
+165,39,United Kingdom,2025,0.1949,0.0,,no-conflict
+166,171,New Zealand,2025,0.1944,0.0,,no-conflict
+167,140,Brunei,2025,0.19419999999999998,0.0,,no-conflict
+168,37,Iceland,2025,0.19369999999999998,0.0,,no-conflict
+169,118,Maldives,2025,0.1931,0.0,,no-conflict
+170,21,St. Lucia,2025,0.19269999999999998,0.0,,no-conflict
+171,26,Bahamas,2025,0.19240000000000002,0.0,,no-conflict
+172,108,Netherlands,2025,0.1918,0.0,,no-conflict
+173,180,Solomon Is.,2025,0.1905,0.0,,no-conflict
+174,114,Lithuania,2025,0.18460000000000001,0.0,,no-conflict
+175,40,Cape Verde,2025,0.1846,0.0,,no-conflict
+176,6,Tonga,2025,0.1827,0.0,,no-conflict
+177,22,St. Vincent and the Grenadines,2025,0.1827,0.0,,no-conflict
+178,5,Samoa,2025,0.1812,0.0,,no-conflict
+179,174,Seychelles,2025,0.1808,0.0,,no-conflict
+180,176,Timor Leste,2025,0.1799,0.0,,no-conflict
+181,113,Latvia,2025,0.1765,0.0,,no-conflict
+182,107,Luxembourg,2025,0.176,0.0,,no-conflict
+183,90,Cyprus,2025,0.1755,0.0,,no-conflict
+184,87,Malta,2025,0.16949999999999998,0.0,,no-conflict
+185,18,Barbados,2025,0.1679,0.0,,no-conflict
+186,144,Palau,2025,0.1623,0.0,,no-conflict
+187,86,Macedonia,2025,0.1614,0.0,,no-conflict
+188,153,Micronesia,2025,0.1596,0.0,,no-conflict
+189,152,Marshall Is.,2025,0.1588,0.0,,no-conflict
+190,111,Estonia,2025,0.1577,0.0,,no-conflict

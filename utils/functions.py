@@ -302,13 +302,15 @@ def get_sum_of_actuals_last_12months_by_c(predictor_df, feature, csv, save_path)
     return sum_actuals_last_12months_by_c
 
 
-def filter_forecasts_by_criteria(forecasts_df, qualifying_countries_df, csv, save_path):
+def filter_forecasts_by_criteria(forecasts_df, qualifying_countries_df, criteria_label, csv, save_path):
     """Takes a forecast dataframe retrieved from the VIEWS API and filters out results that meet a preset criteria. The criteria for filtering are based on the 'qualifying_countries' dataframe, which should contain a column with (only) the countries that meet the criteria, and other colum(s) with data representing the criteria itself (e.g. actuals). The two dataframes will be merged into one based on the 'country_id' column. Returns a pandas dataframe with the forecasts for the qualifying countries, for all categories of violence. 
         
     Args:
         forecasts: The forecast dataframe to use, fetched from the VIEWS API. Use the 'fetch_forecasts_from_api()' and, if relevant, the 'forecasts_from_cm_to_cy()' functions to retrieve the data in the correct format.
 
-        qualifying_countries: A pandas dataframe with the countries that meet the criteria. The dataframe should contain a column with the country_ids, country names (named 'country') and other column(s) with data representing the criteria itself (e.g. actuals). The two dataframes will be merged on the 'country_id' columns. To ensure correct column names, use data produced by the functions 'fetch_forecasts_from_api()', 'fetch_cy_forecasts()', and fetch_features_from_api() to create your critera. 
+        qualifying_countries_df: A pandas dataframe with the countries that meet the criteria. The dataframe should contain a column with the country_ids, country names (named 'country') and other column(s) with data representing the criteria itself (e.g. actuals). The two dataframes will be merged on the 'country_id' columns. To ensure correct column names, use data produced by the functions 'fetch_forecasts_from_api()', 'fetch_cy_forecasts()', and fetch_features_from_api() to create your critera. 
+
+        criteria_label (str): A label for the criteria used to filter the forecasts. This will be used in the filename if the results are saved as a csv file.
         
         csv (bool): If True, the function will create a csv file with the results. 
 
@@ -331,14 +333,14 @@ def filter_forecasts_by_criteria(forecasts_df, qualifying_countries_df, csv, sav
     merged_dfs = pd.merge(filtered_forecasts, qualifying_countries_df, on=['country_id', 'country'], how='left').sort_values(by=['main_mean'], ascending=False)
 
     if csv == True:
-            file_name = f'forecasts_by_criteria'
+            file_name = f'forecasts_by_criteria_{criteria_label}'
             save_path = os.path.join(save_path, file_name)
             merged_dfs.to_csv(f'{save_path}.csv')
             print(f"Forecasts that meet selected criteria saved as csv to {save_path}.")
     return merged_dfs
 
 
-def watchlist_relative_change_in_fatalities(forecasts_by_cy, sum_actuals_last_12months_by_c, category, csv, save_folder):
+def watchlist_relative_change_in_fatalities_by_intensity(forecasts_by_cy, sum_actuals_last_12months_by_c, category, csv, save_folder):
     """Takes a country-year forecast dataframe and a country-month actuals dataframe fetched from the VIEWS API, and calculates the predicted change in state-based fatalities for each country-year as compared to the sum of sb fatalities per country over the last 12 months. The function produces a set of csv files for (1) the full dataset with all categories, and (2) results filtered by each predicted intensity of violence in the given country-year. It returns a pandas dataframe with the results for all categories of violence.
     
     Args:
@@ -379,10 +381,10 @@ def watchlist_relative_change_in_fatalities(forecasts_by_cy, sum_actuals_last_12
     # Add column for the predicted intensity of violence
     sorted_predicted_change['predicted_violence_category'] = sorted_predicted_change['main_mean'].apply(
     lambda x: 'low' if x < 25 
-              else 'medium' if 25 <= x < 100 
-              else 'high' if 100 <= x < 1000 
-              else 'war' if x >= 1000 
-              else 'unknown'  # Optional else case if needed
+        else 'medium' if 25 <= x < 100 
+        else 'high' if 100 <= x < 1000 
+        else 'war' if x >= 1000 
+        else 'unknown'  # Optional else case if needed
     )
 
     # Get the unique categories
@@ -398,7 +400,7 @@ def watchlist_relative_change_in_fatalities(forecasts_by_cy, sum_actuals_last_12
                 category_df.to_csv(f'{save_path}.csv')
                 print(f'Saved {file_name_cat} as csv to {save_path}.')
         if csv:
-            file_name_full = f'cy_forecasts_predictedchange_all_categories'
+            file_name_full = f'cy_forecasts_predictedchange_all_intensities'
             save_path = os.path.join(save_folder, file_name_full)
             sorted_predicted_change.to_csv(f'{save_path}.csv')
             print(f'Saved {file_name_full} as csv to {save_path}.')
@@ -412,4 +414,65 @@ def watchlist_relative_change_in_fatalities(forecasts_by_cy, sum_actuals_last_12
             category_df.to_csv(f'{save_path}.csv')
             print(f'Saved {file_name_cat} as csv to {save_path}.')
         return category_df
+
+
+def watchlist_relative_change_in_fatalities_by_classification(forecasts_by_cy, sum_actuals_last_12months_by_c, csv, save_folder):
+    """Takes a country-year forecast dataframe and a country-month actuals dataframe fetched from the VIEWS API, and calculates the predicted change in fatalities for each country-year as compared to the sum of fatalities per country over the last 12 months. Assigns a category to each prediction based on whether or not 25 or more BRDs have been predicted for that country-year. The function produces a csv file for each category, a csv file for all categories, and then returns a pandas dataframe with the all-categories result.
+    
+    Args:
+        cy_forecasts (df): Country-year forecasts dataframe, preferably produced by the 'fetch_cy_forecasts()' function to ensure correct column names. The country name column must be called "country".
+
+        actuals_last_12_months_by_cy (df): Actuals dataframe with the sum of fatalities over the past 12 months per country, preferably produced by the 'get_sum_of_actuals_for_last_12months()' function to ensure correct column names. The country name column must be called "country".
+
+        csv (bool): If True, the function will save the selected data to a csv file. Else, it will only return a pandas dataframe.
+
+        save_folder (str): The path to your preferred save folder, starting after 'root/home/'.
+    
+    Returns:
+        df: A pandas dataframe with the predicted change in fatalities for each country-year as compared to the sum of fatalities per country over the last 12 months. The dataframe is sorted by the percent change in descending order.
+
+    Dependencies:
+    import os
+    import requests
+    import pandas as pd 
+    import numpy as np
+    """
+
+    # Merge actuals_last_12months with country-year forecasts
+    prep_for_predicted_change = pd.merge(forecasts_by_cy, sum_actuals_last_12months_by_c, on=['country_id', 'country'], how='left')
+    prep_for_predicted_change = prep_for_predicted_change.sort_values(by=['main_mean'], ascending=False)
+
+
+   # Create a new column with the percent change from actuals_last_12_months to each country-year forecast
+    prep_for_predicted_change['predicted_change_in_percent'] = ((prep_for_predicted_change['main_mean'] - prep_for_predicted_change['actuals_last_12months']) / prep_for_predicted_change['actuals_last_12months']) * 100
+
+    # Replace inf values with NaN, sort by % change
+    predicted_change = prep_for_predicted_change.replace([np.inf, -np.inf], np.nan)
+    sorted_predicted_change = predicted_change.sort_values(by=['predicted_change_in_percent'], ascending=False)
+    print('Data for the predicted change in fatalities has been created and stored to df. Here is the result:')
+    print(sorted_predicted_change)
+
+    # Add column for the predicted intensity of violence
+    sorted_predicted_change['predicted_violence_category'] = sorted_predicted_change['main_mean'].apply(
+    lambda x: 'conflict' if x >= 25 
+        else 'no-conflict' 
+    )
+
+    # Get the unique categories
+    unique_categories = sorted_predicted_change['predicted_violence_category'].unique()
+
+    # Loop through data for each unique category, save them as csv files (optional), and return df with the combined results
+    for category in unique_categories:
+        category_df = sorted_predicted_change[sorted_predicted_change['predicted_violence_category'] == category].sort_values(by=['predicted_change_in_percent'], ascending=False)
+        if csv:
+            file_name_cat = f'cy_forecasts_predictedchange_{category}'
+            save_path = os.path.join(save_folder, file_name_cat)
+            category_df.to_csv(f'{save_path}.csv')
+            print(f'Saved {file_name_cat} as csv to {save_path}.')
+    if csv:
+        file_name_full = f'cy_forecasts_predictedchange_binary_classification'
+        save_path = os.path.join(save_folder, file_name_full)
+        sorted_predicted_change.to_csv(f'{save_path}.csv')
+        print(f'Saved {file_name_full} as csv to {save_path}.')
+    return sorted_predicted_change
 
