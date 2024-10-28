@@ -1,7 +1,7 @@
 {
     "ucdp_ged_sb_best_sum": {
         "name": "(UCDP) Observed fatalities, state-based conflict, VIEWS-adaptation",
-        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.pcr.uu.se/research/ucdp/definitions/'>state-based conflict</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>state-based conflict</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
         "unit": {
             "name": "Fatality count",
             "range": "0-unlimited"
@@ -15,8 +15,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-09",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.8",
+            "date_of_access": "2024-10",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.9",
             "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -36,7 +36,7 @@
     },
     "ucdp_ged_ns_best_sum": {
         "name": "(UCDP) Observed fatalities, non-state conflict, VIEWS-adaptation",
-        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.pcr.uu.se/research/ucdp/definitions/'>non-state conflict</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>non-state conflict</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
         "unit": {
             "name": "Fatality count",
             "range": "0-unlimited"
@@ -50,8 +50,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-09",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 23.0.1 through version 24.0.8",
+            "date_of_access": "2024-10",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.9",
             "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -71,7 +71,7 @@
     },
     "ucdp_ged_os_best_sum": {
         "name": "(UCDP) Observed fatalities, one-sided violence, VIEWS-adaptation",
-        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.pcr.uu.se/research/ucdp/definitions/'>one-sided violence</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>one-sided violence</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
         "unit": {
             "name": "Fatality count",
             "range": "0-unlimited"
@@ -85,8 +85,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-09",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.8",
+            "date_of_access": "2024-10",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.9",
             "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -106,7 +106,7 @@
     },
     "ucdp_ged_ns_best_count": {
         "name": "(UCDP) Count of observed conflict events, non-state conflict, VIEWS-adaptation",
-        "description": "Count of the total number of observed <a href='https://www.pcr.uu.se/research/ucdp/definitions/'>non-state conflict</a> events.</br></br>Based on the UCDP 'best estimate' of fatalities, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "description": "Count of the total number of observed <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>non-state conflict</a> events.</br></br>Based on the UCDP 'best estimate' of fatalities, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
         "unit": {
             "name": "Conflict event count",
             "range": "0-unlimited"
@@ -120,8 +120,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-09",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.8",
+            "date_of_access": "2024-10",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.9",
             "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -141,7 +141,7 @@
     },
     "ucdp_ged_os_best_count": {
         "name": "(UCDP) Count of observed conflict events, one-sided violence, VIEWS-adaptation",
-        "description": "Count of the total number of observed conlict events from the <a href='https://www.pcr.uu.se/research/ucdp/definitions/'>one-sided violence</a> category.</br></br>Based on the UCDP 'best estimate' of fatalities, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "description": "Count of the total number of observed conflict events from the <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>one-sided violence</a> category.</br></br>Based on the UCDP 'best estimate' of fatalities, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
         "unit": {
             "name": "Conflict event count",
             "range": "0-unlimited"
@@ -155,8 +155,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2024-09",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.8",
+            "date_of_access": "2024-10",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 23.1; UCDP Candidate Events Dataset (UCDP Candidate) version 24.0.1 through version 24.0.9",
             "citation": "Davies et al. 2024. Organized violence 1989-2023, and the prevalence of organized crime groups. Journal of Peace Research 61(4); Sundberg & Melander. 2013. Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). 'Introducing the UCDP Candidate Events Dataset'. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
