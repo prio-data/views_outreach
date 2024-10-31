@@ -134,7 +134,7 @@ def download_multiple_forecasts_from_api(models, periods, versions, loas, save_p
 
 # Function to fetch specific datasets from the VIEWS API (forecasts or predictors)
 
-def fetch_data_from_api(api_call, csv, save_path):
+def fetch_data_from_api(api_call, csv, save_path, filename='VIEWS_data'):
     """Function to fetch and/or download single datasets from the VIEWS API. Results can be downloaded as a csv file (optional). Returns a pandas dataframe. 
     Args:
         api_call (str): API call to fetch data from the VIEWS API, without the csv flag. Consult the VIEWS API wiki for available datasets, filters, and correct specification. Without filters, the call should be provided in the format 'https://api.viewsforecasting.org/{dataset}/{loa}', where forecast datasets take the form of '{model}_{datestamp}_{version}', e.g. 'https://api.viewsforecasting.org/fatalities002_2024_08_t01/cm'. Predictor datasets, in turn, take the form of 'predictors_{model}_{datestamp}/{loa}', e.g. 'predictors_fatalities002_0000_00/cm', where '0000_00' refers to the rolling dataset that is updated monthly. In static datasets for archived models, '0000_00' is replaced by 'YYYY_MM', corresponding to the EndOfHistory in that dataset. 
@@ -143,6 +143,8 @@ def fetch_data_from_api(api_call, csv, save_path):
 
         save_path (str): The path to your preferred save folder, starting after 'root/home/'.
     
+        filename (str): The preferred name of the downloaded file. If no other value is passed, 'VIEWS_data' is used as the default name.
+
     Returns:
         df: Pandas dataframe with the fetched data.
 
@@ -196,7 +198,7 @@ def fetch_data_from_api(api_call, csv, save_path):
         # Save data to csv, or return df
         if csv:
             # Create filename
-            file_name = "VIEWS_data.csv"
+            file_name = filename
             
             # Create path
             home = os.path.expanduser("~")
@@ -476,3 +478,6 @@ def watchlist_relative_change_in_fatalities_by_classification(forecasts_by_cy, s
         print(f'Saved {file_name_full} as csv to {save_path}.')
     return sorted_predicted_change
 
+
+if __name__ == "__main__":
+    fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities001_2022_12_t01/pgm', csv=True, save_path='Desktop/')
