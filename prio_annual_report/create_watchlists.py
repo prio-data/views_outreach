@@ -18,7 +18,7 @@ from utils import functions as f
 
 # Get the directory where the notebook is running, save to folder in absolute path
 current_dir = os.getcwd()
-save_folder = f'{current_dir}/prio_annual_report/data/Aug-24/'
+save_folder = f'{current_dir}/prio_annual_report/data/'
 
 # Ensure the save folder exists
 if not os.path.exists(save_folder):
@@ -27,7 +27,7 @@ if not os.path.exists(save_folder):
 # CREATE WATCHLIST 1: Highest predicted fatalities in 2025 
 
 # Step 1: Fetch country-month forecasts from API
-forecasts = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities002_2024_08_t01/cm/sb/main_mean', csv=False, save_path=save_folder)
+forecasts = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities002_2024_09_t01/cm/sb/main_mean', csv=False, save_path=save_folder, filename='VIEWS_forecasts')
 
 # Step 2: Aggregate forecasts by country-year, save to csv
 forecasts_by_cy = f.forecasts_from_cm_to_cy(forecasts=forecasts, year='2025', csv=True, save_path=save_folder)
@@ -38,7 +38,7 @@ print('Watchlist 1 successfully created.\n\n')
 # CREATE WATCHLIST 2: Highest predicted fatalities in 2025, amongst countries with less than 25 BRDs over the past 12 months
 
 # Step 1: Get latest actuals for all countries
-predictor_df = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/predictors_fatalities002_0000_00/cm/px/ucdp_ged_sb_best_sum', csv=False, save_path=save_folder)
+predictor_df = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/predictors_fatalities002_0000_00/cm/px/ucdp_ged_sb_best_sum', csv=False, save_path=save_folder, filename='VIEWS_predictors')
 
 # Step 2: Get sum of actuals for last 12 months
 sum_actuals_last_12months_by_c = f.get_sum_of_actuals_last_12months_by_c(predictor_df=predictor_df, feature='ucdp_ged_sb_best_sum', csv=False, save_path=save_folder)
