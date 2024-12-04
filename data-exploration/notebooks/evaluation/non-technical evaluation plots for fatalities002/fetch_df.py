@@ -15,12 +15,16 @@ from views_runs import storage, ModelMetadata
 from views_runs.storage import store, retrieve, fetch_metadata
 from views_forecasts.extensions import *
 
+# "calib_partitioner_dict = {\"train\":(121,420),\"predict\":(421,468)}\n",
+# "test_partitioner_dict = {\"train\":(121,468),\"predict\":(469,516)}\n",
+#  "future_partitioner_dict = {\"train\":(121,516),\"predict\":(517,528)}\n",
+
 def sc_all():
     calib_run_id = 46
     test = pd.DataFrame.forecasts.read_store(run=calib_run_id, name='cm_ensemble_genetic_test')
     df = test
-    last_in_calib = 456
-    last_in_test = 504
+    last_in_calib = 468 # used to be 456
+    last_in_test = 516 # used to be 504
     t_range = range(0, 48)  # t_range specifies the duration of the step-combined series to construct
     step_range = range(1, 36)
     sc_all = pd.DataFrame(df['ln_ged_sb_dep'])
