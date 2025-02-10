@@ -198,7 +198,7 @@ def fetch_data_from_api(api_call, csv, save_path, filename='VIEWS_data'):
         # Save data to csv, or return df
         if csv:
             # Create filename
-            file_name = filename
+            file_name = f'{filename}.csv'
             
             # Create path
             home = os.path.expanduser("~")
