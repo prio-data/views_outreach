@@ -1,0 +1,141 @@
+/* Shadow UNDER the navbar */
+
+.drop-border {
+box-shadow: 0px 10px 5px -10px #2D0A41; 
+}
+
+.breadcrumb {
+text-decoration: none !important;
+font-weight: 600;
+font-size: 0.9em;
+}
+
+a:hover { /* Color at mouse-over */
+    color: #307fe2; 
+    text-decoration: none;
+
+}
+
+a:active { /* Color when it is being clicked on */
+    color: #5999e8;
+    text-decoration: none;
+} 
+
+/* GRID */
+
+.grid-style {
+justify-content: space-between;
+}
+
+
+/* OBJECTIVES */
+
+.word-break-all {
+word-break: break-all; 
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;
+}
+
+.word-break {
+word-break: break-word;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto; 
+}
+
+.square-icon {
+display: flex;
+width: 50%;
+aspect-ratio: 1 / 1;
+border-radius: 5px;
+justify-content: center;
+align-items: center; 
+}
+
+
+/* POST CAROUSEL */
+
+div.rounded-post-carousel  {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slim-publications {
+margin-top: -18px  !important;
+margin-bottom: -5px  !important;
+}
+
+.no-padding {
+margin-top: 0px  !important;
+margin-bottom: 0px  !important;
+padding-top: 0px  !important;
+padding-bottom: 0px  !important;
+}
+
+/* PUBLICATIONS ACF */
+
+.rounded {
+border-radius: 5px;
+}
+
+/* HERO */
+
+.hero {
+height: calc(33vh - 63px);
+overflow: hidden;
+width: 100%;
+}
+
+/* INFO CARD */
+
+
+
+/* GENERAL LAYOUT */
+
+.has-max-width {
+max-width: 1280px;
+}
+
+.centered {
+margin: auto;
+}
+
+
+/* FLEX CARDS */
+
+.flex-item {
+box-sizing: border-box; 
+min-width: 300px;
+}
+
+.info-card {
+border-left: 3px solid;
+border-color: var(--wp--preset--color--theme-4);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+border-radius: 5px;
+padding: 1% 2.5% !important;
+}
+
+.img-in-project {
+aspect-ratio: 4 / 3;
+width: 100%;
+min-width: 200px;
+max-width: 400px;
+border-radius: 5px;
+}
+
+
+/* FOOTER */
+
+.in-footer a, .in-footer p {
+color: #fff;
+}
+
+.in-footer h2 {
+font-size: 1.25em;
+text-transform: uppercase;
+color: #fff;
+}
