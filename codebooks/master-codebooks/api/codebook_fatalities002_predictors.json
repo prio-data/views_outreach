@@ -386,7 +386,7 @@
     },
     "wb_wdi_ny_gdp_pcap_kd": {
         "name": "(WB) GDP per capita (constant 2015 US$)",
-        "description": "GDP per capita is gross domestic product divided by midyear population. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in constant 2015 U.S. dollars.",
+        "description": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.",
         "unit": {
             "name": "Constant 2015 USD",
             "range": "0-unlimited"
@@ -400,10 +400,10 @@
                 "id": "NY.GDP.PCAP.KD",
                 "url": "<a href='https://data.worldbank.org/indicator/NY.GDP.PCAP.KD'>https://data.worldbank.org/indicator/NY.GDP.PCAP.KD</a>"
             },
-            "date_of_access": "2023-02-03",
-            "dataset": "World Development Indicators (202212)",
-            "citation": "World Bank national accounts data, and OECD National Accounts data files; World Bank, World Development Indicators (2022-12). 'GDP per capita (constant 2015 US$)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
-            "license": "<a href='https://datacatalog.worldbank.org/public-licenses#cc-by'>CC-BY 4.0</a>"
+            "date_of_access": "2025-08-27",
+            "dataset": "World Development Indicators (2025-07-01)",
+            "citation": "The World Bank (2025). World Development Indicators, 'GDP per capita (constant 2015 US$)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
+            "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
         "visualization": {
             "legend": "GDP per capita (constant 2015 US$)",
@@ -421,7 +421,7 @@
     },
     "wb_wdi_sp_dyn_le00_in": {
         "name": "(WB) Life expectancy at birth, total (years)",
-        "description": "Life expectancy at birth. Indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
+        "description": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
         "unit": {
             "name": "Years",
             "range": "0-unlimited"
@@ -435,10 +435,10 @@
                 "id": "SP.DYN.LE00.IN",
                 "url": "<a href='https://data.worldbank.org/indicator/SP.DYN.LE00.IN'>https://data.worldbank.org/indicator/SP.DYN.LE00.IN</a>"
             },
-            "date_of_access": "2023-02-03",
-            "dataset": "World Development Indicators (202212)",
-            "citation": "World Bank, World Development Indicators (2022-12). 'Life expectancy at birth, total (years)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
-            "license": "<a href='https://datacatalog.worldbank.org/public-licenses#cc-by'>CC-BY 4.0</a>"
+            "date_of_access": "2025-08-27",
+            "dataset": "World Development Indicators (2025-07-01)",
+            "citation": "The World Bank (2025). World Development Indicators, 'Life expectancy at birth, total (years)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
+            "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
         "visualization": {
             "legend": "Life expectancy (years)",
@@ -470,10 +470,10 @@
                 "id": "SE.PRM.NENR",
                 "url": "<a href='https://data.worldbank.org/indicator/SE.PRM.NENR'>https://data.worldbank.org/indicator/SE.PRM.NENR</a>"
             },
-            "date_of_access": "2023-02-03",
-            "dataset": "World Development Indicators (202212)",
-            "citation": "UNESCO Institute for Statistics (<a href='http://uis.unesco.org/'>http://uis.unesco.org/</a>). Data as of February 2020; World Bank, World Development Indicators (2022-12). 'School enrollment, primary (% net)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
-            "license": "<a href='https://datacatalog.worldbank.org/public-licenses#cc-by'>CC-BY 4.0</a>"
+            "date_of_access": "2025-08-27",
+            "dataset": "World Development Indicators (2025-07-01)",
+            "citation": "The World Bank (2025). World Development Indicators, 'School enrollment, primary (% net)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
+            "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
         "visualization": {
             "legend": "Primary school enrollment (% net)",
@@ -505,10 +505,10 @@
                 "id": "SP.POP.TOTL",
                 "url": "<a href='https://data.worldbank.org/indicator/SP.POP.TOTL'>https://data.worldbank.org/indicator/SP.POP.TOTL</a>"
             },
-            "date_of_access": "2023-02-03",
-            "dataset": "World Development Indicators (202212)",
-            "citation": "(1) United Nations Population Division. World Population Prospects: 2022 Revision. (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics, (4) United Nations Statistical Division. Population and Vital Statistics Reprot (various years), (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme; World Bank, World Development Indicators (2022-12). 'Population, total'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
-            "license": "<a href='https://datacatalog.worldbank.org/public-licenses#cc-by'>CC-BY 4.0</a>"
+            "date_of_access": "2025-08-27",
+            "dataset": "World Development Indicators (2025-07-01)",
+            "citation": "The World Bank (2025). World Development Indicators, 'Population, total'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
+            "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
         "visualization": {
             "legend": "Population (million people)",
@@ -526,7 +526,7 @@
     },
     "wb_wdi_sp_dyn_imrt_in": {
         "name": "(WB) Infant mortality rate per 1,000 live births",
-        "description": "Infant mortality rate is the number of infants dying before reaching one year of age, per 1000 live births in a given year.",
+        "description": "Infant mortality rate is the number of infants dying before reaching one year of age, per 1,000 live births in a given year.",
         "unit": {
             "name": "Infant mortality rate",
             "range": "0-100"
@@ -540,10 +540,10 @@
                 "id": "SP.DYN.IMRT.IN",
                 "url": "<a href='https://data.worldbank.org/indicator/SP.DYN.IMRT.IN'>https://data.worldbank.org/indicator/SP.DYN.IMRT.IN</a>"
             },
-            "date_of_access": "2023-02-03",
-            "dataset": "World Development Indicators (202212)",
-            "citation": "Estimates developed by the UN Inter-agency Group for Child Mortality Estimation (UNICEF, WHO, World Bank, UN DESA Population Division) at <a href='www.childmortality.org'>www.childmortality.org</a>; World Bank, World Development Indicators (2022-12). 'Mortality rate, infant (per 1,000 live births)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
-            "license": "<a href='https://datacatalog.worldbank.org/public-licenses#cc-by'>CC-BY 4.0</a>"
+            "date_of_access": "2025-08-27",
+            "dataset": "World Development Indicators (2025-07-01)",
+            "citation": "The World Bank (2025). World Development Indicators, 'Mortality rate, infant (per 1,000 live births)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
+            "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
         "visualization": {
             "legend": "Infant mortality rate per 1,000 live births",
