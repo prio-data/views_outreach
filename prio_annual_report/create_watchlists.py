@@ -18,24 +18,27 @@ from utils import functions as f
 
 # Get the directory where the notebook is running, save to folder in absolute path
 current_dir = os.getcwd()
-save_folder = f'{current_dir}/prio_annual_report/data/'
+save_folder = f'{current_dir}/data/'
+
+# Set year for watchlists
+year = '2026'
 
 # Ensure the save folder exists
 if not os.path.exists(save_folder):
     os.makedirs(save_folder)
 
-# CREATE WATCHLIST 1: Highest predicted fatalities in 2025 
+# CREATE WATCHLIST 1: Highest predicted fatalities in watchlist year 
 
 # Step 1: Fetch country-month forecasts from API
-forecasts = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities002_2024_09_t01/cm/sb/main_mean', csv=False, save_path=save_folder, filename='VIEWS_forecasts')
+forecasts = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities002_2025_08_t01/cm/sb/main_mean', csv=False, save_path=save_folder, filename='VIEWS_forecasts')
 
 # Step 2: Aggregate forecasts by country-year, save to csv
-forecasts_by_cy = f.forecasts_from_cm_to_cy(forecasts=forecasts, year='2025', csv=True, save_path=save_folder)
+forecasts_by_cy = f.forecasts_from_cm_to_cy(forecasts=forecasts, year=year, csv=True, save_path=save_folder)
 
 print('Watchlist 1 successfully created.\n\n')
 
 
-# CREATE WATCHLIST 2: Highest predicted fatalities in 2025, amongst countries with less than 25 BRDs over the past 12 months
+# CREATE WATCHLIST 2: Highest predicted fatalities in watchlist year, amongst countries with less than 25 BRDs over the past 12 months
 
 # Step 1: Get latest actuals for all countries
 predictor_df = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/predictors_fatalities002_0000_00/cm/px/ucdp_ged_sb_best_sum', csv=False, save_path=save_folder, filename='VIEWS_predictors')
@@ -47,18 +50,18 @@ sum_actuals_last_12months_by_c = f.get_sum_of_actuals_last_12months_by_c(predict
 qualifying_countries_lessthan25ged_df = sum_actuals_last_12months_by_c[sum_actuals_last_12months_by_c['actuals_last_12months'] < 25].copy()
 
 # Step 4: Create watchlist based on criteria above (save as csv)
-forecasts_for_2025_where_lessthan25ged = f.filter_forecasts_by_criteria(forecasts_df=forecasts_by_cy, qualifying_countries_df=qualifying_countries_lessthan25ged_df, criteria_label='lessthan25ged', csv=True, save_path=save_folder)
+forecasts_for_2026_where_lessthan25ged = f.filter_forecasts_by_criteria(forecasts_df=forecasts_by_cy, qualifying_countries_df=qualifying_countries_lessthan25ged_df, criteria_label='lessthan25ged', csv=True, save_path=save_folder)
 
 print('Watchlist 2 successfully created.\n\n')
 
 
-# CREATE WATCHLIST 3: Highest predicted fatalities in 2025, amongst countries with at least 25 BRDs over the past 12 months
+# CREATE WATCHLIST 3: Highest predicted fatalities in 2026, amongst countries with at least 25 BRDs over the past 12 months
 
 # Step 1: Get list of countries with at least  25 BRDs over last 12 months + sum fatalities for use in function filter_forecasts_by_criteria() 
 qualifying_countries_greq25_df = sum_actuals_last_12months_by_c[sum_actuals_last_12months_by_c['actuals_last_12months'] >= 25].copy()
 
 # Step 2: Create watchlist based on criteria above (save as csv)
-forecasts_for_2025_where_greq25ged = f.filter_forecasts_by_criteria(forecasts_df=forecasts_by_cy, qualifying_countries_df=qualifying_countries_greq25_df, criteria_label='greq25ged',csv=True, save_path=save_folder)
+forecasts_for_2026_where_greq25ged = f.filter_forecasts_by_criteria(forecasts_df=forecasts_by_cy, qualifying_countries_df=qualifying_countries_greq25_df, criteria_label='greq25ged',csv=True, save_path=save_folder)
 
 print('Watchlist 3 successfully created.\n\n')
 
