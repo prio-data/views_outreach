@@ -30,7 +30,7 @@ if not os.path.exists(save_folder):
 # CREATE WATCHLIST 1: Highest predicted fatalities in watchlist year 
 
 # Step 1: Fetch country-month forecasts from API
-forecasts = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities002_2025_08_t01/cm/sb/main_mean', csv=False, save_path=save_folder, filename='VIEWS_forecasts')
+forecasts = f.fetch_data_from_api(api_call='https://api.viewsforecasting.org/fatalities003_2025_10_t01/cm/sb/main_mean', csv=False, save_path=save_folder, filename='VIEWS_forecasts')
 
 # Step 2: Aggregate forecasts by country-year, save to csv
 forecasts_by_cy = f.forecasts_from_cm_to_cy(forecasts=forecasts, year=year, csv=True, save_path=save_folder)

@@ -1,157 +1,157 @@
 ,country_id,country,year,main_mean,actuals_last_12months,predicted_change_in_percent,predicted_violence_category
-36,96,Turkey,2026,18.948,1.0,1794.8,no-conflict
-48,164,Swaziland,2026,6.7469,2.0,237.345,no-conflict
-58,42,Ghana,2026,2.7933,1.0,179.32999999999998,no-conflict
-44,222,Egypt,2026,7.89,3.0,163.0,no-conflict
-41,179,Papua New Guinea,2026,9.2627,4.0,131.56750000000002,no-conflict
-43,126,Azerbaijan,2026,8.4567,4.0,111.41749999999999,no-conflict
-49,235,Uganda,2026,5.3922,3.0,79.74,no-conflict
-62,25,Jamaica,2026,1.6529,1.0,65.29,no-conflict
-45,131,Saudi Arabia,2026,7.7224,5.0,54.44800000000001,no-conflict
-53,156,Rwanda,2026,4.4854,5.0,-10.291999999999994,no-conflict
-42,147,Cambodia,2026,9.068999999999999,11.0,-17.554545454545465,no-conflict
-56,23,Dominican Republic,2026,3.0701,4.0,-23.2475,no-conflict
-50,243,Morocco,2026,4.9559,7.0,-29.201428571428572,no-conflict
-46,138,Bangladesh,2026,7.3925,11.0,-32.79545454545455,no-conflict
-52,137,Tajikistan,2026,4.5679,7.0,-34.744285714285716,no-conflict
-37,165,Angola,2026,15.6328,34.0,-54.02117647058824,no-conflict
-38,81,Togo,2026,14.474,32.0,-54.76875,no-conflict
-40,11,Ecuador,2026,9.7672,22.0,-55.603636363636355,no-conflict
-51,4,Venezuela,2026,4.6924,11.0,-57.341818181818184,no-conflict
-74,234,United States,2026,0.8228,3.0,-72.57333333333334,no-conflict
-55,67,Algeria,2026,4.1701999999999995,35.0,-88.08514285714286,no-conflict
-104,130,Qatar,2026,0.2231,6.0,-96.28166666666668,no-conflict
-35,163,South Africa,2026,24.2466,0.0,,no-conflict
-39,155,Burundi,2026,10.0281,0.0,,no-conflict
-47,148,Laos,2026,7.0309,0.0,,no-conflict
-54,13,Peru,2026,4.4761,0.0,,no-conflict
-57,16,Guatemala,2026,3.0107,0.0,,no-conflict
-59,244,Mauritania,2026,1.8857,0.0,,no-conflict
-60,73,Tunisia,2026,1.7442,0.0,,no-conflict
-61,125,Armenia,2026,1.6842,0.0,,no-conflict
-63,242,Tanzania,2026,1.5698,0.0,,no-conflict
-64,199,China,2026,1.559,0.0,,no-conflict
-65,62,Jordan,2026,1.4281,0.0,,no-conflict
-66,158,Zimbabwe,2026,1.4081000000000001,0.0,,no-conflict
-67,157,Zambia,2026,1.2423,0.0,,no-conflict
-68,48,Guinea,2026,1.0945,0.0,,no-conflict
-69,119,Oman,2026,1.032,0.0,,no-conflict
-70,134,Kyrgyzstan,2026,1.0131000000000001,0.0,,no-conflict
-71,151,Vietnam,2026,0.9195,0.0,,no-conflict
-72,56,Eritrea,2026,0.872,0.0,,no-conflict
-73,55,Djibouti,2026,0.8658,0.0,,no-conflict
-75,172,Madagascar,2026,0.8144,0.0,,no-conflict
-76,8,Bolivia,2026,0.7474000000000001,0.0,,no-conflict
-77,41,Cote d'Ivoire,2026,0.7452,0.0,,no-conflict
-78,27,Belize,2026,0.7367,0.0,,no-conflict
-79,166,Congo,2026,0.7125,0.0,,no-conflict
-80,110,Belarus,2026,0.6725,0.0,,no-conflict
-81,76,Equatorial Guinea,2026,0.6607,0.0,,no-conflict
-82,177,Australia,2026,0.5918,0.0,,no-conflict
-83,143,North Korea,2026,0.5861,0.0,,no-conflict
-84,129,Kuwait,2026,0.5546,0.0,,no-conflict
-85,100,Hungary,2026,0.4725,0.0,,no-conflict
-86,33,Nicaragua,2026,0.4628,0.0,,no-conflict
-87,122,Turkmenistan,2026,0.4609,0.0,,no-conflict
-88,123,Uzbekistan,2026,0.4514,0.0,,no-conflict
-89,3,Trinidad and Tobago,2026,0.4257,0.0,,no-conflict
-90,161,Malawi,2026,0.3711,0.0,,no-conflict
-91,31,El Salvador,2026,0.342,0.0,,no-conflict
-92,32,Honduras,2026,0.3377,0.0,,no-conflict
-93,92,Georgia,2026,0.3226,0.0,,no-conflict
-94,52,Senegal,2026,0.3164,0.0,,no-conflict
-95,205,Malaysia,2026,0.3011,0.0,,no-conflict
-96,101,Poland,2026,0.29059999999999997,0.0,,no-conflict
-97,1,Guyana,2026,0.29059999999999997,0.0,,no-conflict
-98,12,Paraguay,2026,0.29059999999999997,0.0,,no-conflict
-99,116,Romania,2026,0.2735,0.0,,no-conflict
-100,104,Belgium,2026,0.2714,0.0,,no-conflict
-101,232,Kosovo,2026,0.2617,0.0,,no-conflict
-102,132,United Arab Emirates,2026,0.2582,0.0,,no-conflict
-103,135,Nepal,2026,0.24230000000000002,0.0,,no-conflict
-105,30,Cuba,2026,0.2219,0.0,,no-conflict
-106,58,Mongolia,2026,0.22,0.0,,no-conflict
-107,170,Namibia,2026,0.2198,0.0,,no-conflict
-108,127,Bahrain,2026,0.219,0.0,,no-conflict
-109,184,Germany,2026,0.2187,0.0,,no-conflict
-110,105,France,2026,0.2128,0.0,,no-conflict
-111,169,Gabon,2026,0.20679999999999998,0.0,,no-conflict
-112,39,United Kingdom,2026,0.2059,0.0,,no-conflict
-113,63,Kazakhstan,2026,0.2006,0.0,,no-conflict
-114,139,Bhutan,2026,0.1999,0.0,,no-conflict
-115,35,Antigua and Barbuda,2026,0.1954,0.0,,no-conflict
-116,121,Sri Lanka,2026,0.1931,0.0,,no-conflict
-117,29,Costa Rica,2026,0.1852,0.0,,no-conflict
-118,46,Spain,2026,0.1745,0.0,,no-conflict
-119,66,Sweden,2026,0.1709,0.0,,no-conflict
-120,2,Suriname,2026,0.1693,0.0,,no-conflict
-121,159,Comoros,2026,0.1636,0.0,,no-conflict
-122,49,Guinea-Bissau,2026,0.1598,0.0,,no-conflict
-123,160,Lesotho,2026,0.15940000000000001,0.0,,no-conflict
-124,7,Argentina,2026,0.15689999999999998,0.0,,no-conflict
-125,89,Bulgaria,2026,0.1523,0.0,,no-conflict
-126,84,Croatia,2026,0.1498,0.0,,no-conflict
-127,83,Bosnia and Herzegovina,2026,0.1427,0.0,,no-conflict
-128,183,Canada,2026,0.1397,0.0,,no-conflict
-129,115,Moldova,2026,0.1366,0.0,,no-conflict
-130,112,Finland,2026,0.1298,0.0,,no-conflict
-131,180,Solomon Is.,2026,0.12380000000000001,0.0,,no-conflict
-132,154,Botswana,2026,0.1228,0.0,,no-conflict
-133,77,Kiribati,2026,0.12029999999999999,0.0,,no-conflict
-134,19,Dominica,2026,0.116,0.0,,no-conflict
-135,26,Bahamas,2026,0.1151,0.0,,no-conflict
-136,64,Norway,2026,0.1147,0.0,,no-conflict
-137,102,Slovakia,2026,0.11449999999999999,0.0,,no-conflict
-138,53,Sierra Leone,2026,0.1066,0.0,,no-conflict
-139,173,Mauritius,2026,0.1028,0.0,,no-conflict
-140,93,Greece,2026,0.1027,0.0,,no-conflict
-141,97,Austria,2026,0.0985,0.0,,no-conflict
-142,80,Sao Tome and Principe,2026,0.0979,0.0,,no-conflict
-143,20,Grenada,2026,0.0861,0.0,,no-conflict
-144,34,Panama,2026,0.0836,0.0,,no-conflict
-145,36,St. Kitts and Nevis,2026,0.0824,0.0,,no-conflict
-146,178,Nauru,2026,0.082,0.0,,no-conflict
-147,43,Liberia,2026,0.0808,0.0,,no-conflict
-148,14,Uruguay,2026,0.0801,0.0,,no-conflict
-149,54,The Gambia,2026,0.0785,0.0,,no-conflict
-150,10,Chile,2026,0.0785,0.0,,no-conflict
-151,38,Ireland,2026,0.0784,0.0,,no-conflict
-152,181,Tuvalu,2026,0.0773,0.0,,no-conflict
-153,198,Taiwan,2026,0.077,0.0,,no-conflict
-154,5,Samoa,2026,0.0758,0.0,,no-conflict
-155,144,Palau,2026,0.074,0.0,,no-conflict
+39,130,Qatar,2026,18.2611,6.0,204.35166666666666,no-conflict
+44,234,United States,2026,7.4065,3.0,146.88333333333335,no-conflict
+48,222,Egypt,2026,6.1365,3.0,104.54999999999998,no-conflict
+47,126,Azerbaijan,2026,6.427099999999999,4.0,60.67749999999998,no-conflict
+55,42,Ghana,2026,2.9159,2.0,45.79500000000001,no-conflict
+56,164,Swaziland,2026,2.8622,2.0,43.11000000000001,no-conflict
+46,131,Saudi Arabia,2026,6.9725,5.0,39.45,no-conflict
+45,138,Bangladesh,2026,7.0212,6.0,17.020000000000003,no-conflict
+69,41,Cote d'Ivoire,2026,1.0161,1.0,1.6100000000000003,no-conflict
+41,81,Togo,2026,13.252,14.0,-5.342857142857138,no-conflict
+35,11,Ecuador,2026,21.235,23.0,-7.6739130434782625,no-conflict
+74,25,Jamaica,2026,0.8955,1.0,-10.450000000000003,no-conflict
+50,179,Papua New Guinea,2026,5.0819,6.0,-15.301666666666666,no-conflict
+53,156,Rwanda,2026,3.8001,5.0,-23.998,no-conflict
+42,147,Cambodia,2026,8.2814,11.0,-24.71454545454546,no-conflict
+49,235,Uganda,2026,5.4155,8.0,-32.306250000000006,no-conflict
+36,17,Mexico,2026,21.0428,33.0,-36.233939393939394,no-conflict
+52,137,Tajikistan,2026,3.9838,7.0,-43.08857142857143,no-conflict
+37,4,Venezuela,2026,19.6817,36.0,-45.32861111111111,no-conflict
+51,243,Morocco,2026,4.2061,10.0,-57.93899999999999,no-conflict
+40,165,Angola,2026,13.313,34.0,-60.844117647058816,no-conflict
+57,23,Dominican Republic,2026,2.4201,7.0,-65.42714285714285,no-conflict
+38,96,Turkey,2026,18.4049,0.0,,no-conflict
+43,155,Burundi,2026,8.1586,0.0,,no-conflict
+54,13,Peru,2026,3.4253,0.0,,no-conflict
+58,244,Mauritania,2026,1.9264,0.0,,no-conflict
+59,73,Tunisia,2026,1.8315,0.0,,no-conflict
+60,101,Poland,2026,1.7361,0.0,,no-conflict
+61,242,Tanzania,2026,1.5466,0.0,,no-conflict
+62,125,Armenia,2026,1.4761,0.0,,no-conflict
+63,7,Argentina,2026,1.4304000000000001,0.0,,no-conflict
+64,157,Zambia,2026,1.3382,0.0,,no-conflict
+65,172,Madagascar,2026,1.2993000000000001,0.0,,no-conflict
+66,16,Guatemala,2026,1.2992,0.0,,no-conflict
+67,199,China,2026,1.0942,0.0,,no-conflict
+68,8,Bolivia,2026,1.0282,0.0,,no-conflict
+70,177,Australia,2026,0.9495,0.0,,no-conflict
+71,119,Oman,2026,0.9362,0.0,,no-conflict
+72,62,Jordan,2026,0.9254,0.0,,no-conflict
+73,134,Kyrgyzstan,2026,0.9018,0.0,,no-conflict
+75,56,Eritrea,2026,0.8845000000000001,0.0,,no-conflict
+76,166,Congo,2026,0.8375,0.0,,no-conflict
+77,48,Guinea,2026,0.8013,0.0,,no-conflict
+78,76,Equatorial Guinea,2026,0.7955,0.0,,no-conflict
+79,127,Bahrain,2026,0.707,0.0,,no-conflict
+80,55,Djibouti,2026,0.6969,0.0,,no-conflict
+81,143,North Korea,2026,0.6775,0.0,,no-conflict
+82,132,United Arab Emirates,2026,0.6742,0.0,,no-conflict
+83,158,Zimbabwe,2026,0.6554,0.0,,no-conflict
+84,163,South Africa,2026,0.5784,0.0,,no-conflict
+85,99,Denmark,2026,0.5778,0.0,,no-conflict
+86,89,Bulgaria,2026,0.5663,0.0,,no-conflict
+87,123,Uzbekistan,2026,0.5507,0.0,,no-conflict
+88,27,Belize,2026,0.5367,0.0,,no-conflict
+89,33,Nicaragua,2026,0.482,0.0,,no-conflict
+90,100,Hungary,2026,0.4784,0.0,,no-conflict
+91,148,Laos,2026,0.4782,0.0,,no-conflict
+92,151,Vietnam,2026,0.4638,0.0,,no-conflict
+93,122,Turkmenistan,2026,0.4608,0.0,,no-conflict
+94,110,Belarus,2026,0.4496,0.0,,no-conflict
+95,161,Malawi,2026,0.42969999999999997,0.0,,no-conflict
+96,129,Kuwait,2026,0.4282,0.0,,no-conflict
+97,3,Trinidad and Tobago,2026,0.428,0.0,,no-conflict
+98,12,Paraguay,2026,0.3795,0.0,,no-conflict
+99,32,Honduras,2026,0.3749,0.0,,no-conflict
+100,206,Singapore,2026,0.34750000000000003,0.0,,no-conflict
+101,205,Malaysia,2026,0.3392,0.0,,no-conflict
+102,52,Senegal,2026,0.3286,0.0,,no-conflict
+103,31,El Salvador,2026,0.3272,0.0,,no-conflict
+104,178,Nauru,2026,0.3168,0.0,,no-conflict
+105,232,Kosovo,2026,0.3161,0.0,,no-conflict
+106,92,Georgia,2026,0.2659,0.0,,no-conflict
+107,2,Suriname,2026,0.2545,0.0,,no-conflict
+108,105,France,2026,0.2414,0.0,,no-conflict
+109,58,Mongolia,2026,0.2332,0.0,,no-conflict
+110,139,Bhutan,2026,0.2321,0.0,,no-conflict
+111,198,Taiwan,2026,0.2286,0.0,,no-conflict
+112,30,Cuba,2026,0.2262,0.0,,no-conflict
+113,169,Gabon,2026,0.2198,0.0,,no-conflict
+114,116,Romania,2026,0.2096,0.0,,no-conflict
+115,135,Nepal,2026,0.2092,0.0,,no-conflict
+116,1,Guyana,2026,0.189,0.0,,no-conflict
+117,10,Chile,2026,0.1841,0.0,,no-conflict
+118,159,Comoros,2026,0.17500000000000002,0.0,,no-conflict
+119,46,Spain,2026,0.168,0.0,,no-conflict
+120,63,Kazakhstan,2026,0.16620000000000001,0.0,,no-conflict
+121,121,Sri Lanka,2026,0.1651,0.0,,no-conflict
+122,19,Dominica,2026,0.1632,0.0,,no-conflict
+123,168,Fiji,2026,0.1564,0.0,,no-conflict
+124,97,Austria,2026,0.1562,0.0,,no-conflict
+125,49,Guinea-Bissau,2026,0.1503,0.0,,no-conflict
+126,182,Vanuatu,2026,0.1464,0.0,,no-conflict
+127,183,Canada,2026,0.1427,0.0,,no-conflict
+128,184,Germany,2026,0.141,0.0,,no-conflict
+129,181,Tuvalu,2026,0.1355,0.0,,no-conflict
+130,93,Greece,2026,0.1297,0.0,,no-conflict
+131,112,Finland,2026,0.1277,0.0,,no-conflict
+132,14,Uruguay,2026,0.1271,0.0,,no-conflict
+133,104,Belgium,2026,0.1256,0.0,,no-conflict
+134,77,Kiribati,2026,0.1235,0.0,,no-conflict
+135,20,Grenada,2026,0.1202,0.0,,no-conflict
+136,64,Norway,2026,0.1196,0.0,,no-conflict
+137,39,United Kingdom,2026,0.1167,0.0,,no-conflict
+138,66,Sweden,2026,0.1144,0.0,,no-conflict
+139,34,Panama,2026,0.1082,0.0,,no-conflict
+140,173,Mauritius,2026,0.1016,0.0,,no-conflict
+141,233,Serbia,2026,0.0997,0.0,,no-conflict
+142,160,Lesotho,2026,0.0996,0.0,,no-conflict
+143,29,Costa Rica,2026,0.0968,0.0,,no-conflict
+144,84,Croatia,2026,0.0948,0.0,,no-conflict
+145,231,Montenegro,2026,0.0933,0.0,,no-conflict
+146,35,Antigua and Barbuda,2026,0.0925,0.0,,no-conflict
+147,6,Tonga,2026,0.0922,0.0,,no-conflict
+148,146,South Korea,2026,0.0912,0.0,,no-conflict
+149,86,Macedonia,2026,0.09029999999999999,0.0,,no-conflict
+150,22,St. Vincent and the Grenadines,2026,0.0876,0.0,,no-conflict
+151,102,Slovakia,2026,0.0858,0.0,,no-conflict
+152,170,Namibia,2026,0.0854,0.0,,no-conflict
+153,26,Bahamas,2026,0.0834,0.0,,no-conflict
+154,5,Samoa,2026,0.0802,0.0,,no-conflict
+155,154,Botswana,2026,0.0789,0.0,,no-conflict
 156,21,St. Lucia,2026,0.0711,0.0,,no-conflict
-157,231,Montenegro,2026,0.0695,0.0,,no-conflict
-158,22,St. Vincent and the Grenadines,2026,0.0691,0.0,,no-conflict
-159,86,Macedonia,2026,0.067,0.0,,no-conflict
-160,6,Tonga,2026,0.0658,0.0,,no-conflict
-161,153,Micronesia,2026,0.0638,0.0,,no-conflict
-162,152,Marshall Is.,2026,0.0628,0.0,,no-conflict
-163,233,Serbia,2026,0.062,0.0,,no-conflict
-164,118,Maldives,2026,0.0578,0.0,,no-conflict
-165,140,Brunei,2026,0.0563,0.0,,no-conflict
-166,168,Fiji,2026,0.0527,0.0,,no-conflict
-167,82,Albania,2026,0.0521,0.0,,no-conflict
-168,18,Barbados,2026,0.0512,0.0,,no-conflict
-169,40,Cape Verde,2026,0.05,0.0,,no-conflict
-170,182,Vanuatu,2026,0.0454,0.0,,no-conflict
-171,176,Timor Leste,2026,0.0434,0.0,,no-conflict
-172,206,Singapore,2026,0.042499999999999996,0.0,,no-conflict
-173,98,Czech Republic,2026,0.0407,0.0,,no-conflict
-174,37,Iceland,2026,0.0405,0.0,,no-conflict
-175,146,South Korea,2026,0.0392,0.0,,no-conflict
-176,45,Portugal,2026,0.0387,0.0,,no-conflict
-177,87,Malta,2026,0.0382,0.0,,no-conflict
-178,114,Lithuania,2026,0.0351,0.0,,no-conflict
-179,85,Italy,2026,0.035,0.0,,no-conflict
-180,174,Seychelles,2026,0.0343,0.0,,no-conflict
-181,142,Japan,2026,0.0316,0.0,,no-conflict
-182,109,Switzerland,2026,0.0294,0.0,,no-conflict
-183,103,Slovenia,2026,0.0282,0.0,,no-conflict
-184,108,Netherlands,2026,0.0265,0.0,,no-conflict
-185,107,Luxembourg,2026,0.0247,0.0,,no-conflict
-186,99,Denmark,2026,0.0215,0.0,,no-conflict
-187,113,Latvia,2026,0.0208,0.0,,no-conflict
-188,90,Cyprus,2026,0.0165,0.0,,no-conflict
-189,171,New Zealand,2026,0.0138,0.0,,no-conflict
-190,111,Estonia,2026,0.0117,0.0,,no-conflict
+157,36,St. Kitts and Nevis,2026,0.0704,0.0,,no-conflict
+158,118,Maldives,2026,0.0681,0.0,,no-conflict
+159,38,Ireland,2026,0.0672,0.0,,no-conflict
+160,140,Brunei,2026,0.0669,0.0,,no-conflict
+161,87,Malta,2026,0.0639,0.0,,no-conflict
+162,40,Cape Verde,2026,0.0636,0.0,,no-conflict
+163,142,Japan,2026,0.0623,0.0,,no-conflict
+164,115,Moldova,2026,0.0613,0.0,,no-conflict
+165,54,The Gambia,2026,0.0603,0.0,,no-conflict
+166,82,Albania,2026,0.06,0.0,,no-conflict
+167,144,Palau,2026,0.0595,0.0,,no-conflict
+168,80,Sao Tome and Principe,2026,0.0584,0.0,,no-conflict
+169,43,Liberia,2026,0.0554,0.0,,no-conflict
+170,180,Solomon Is.,2026,0.055099999999999996,0.0,,no-conflict
+171,153,Micronesia,2026,0.0506,0.0,,no-conflict
+172,53,Sierra Leone,2026,0.0505,0.0,,no-conflict
+173,85,Italy,2026,0.0487,0.0,,no-conflict
+174,152,Marshall Is.,2026,0.0474,0.0,,no-conflict
+175,174,Seychelles,2026,0.0465,0.0,,no-conflict
+176,83,Bosnia and Herzegovina,2026,0.0409,0.0,,no-conflict
+177,18,Barbados,2026,0.0342,0.0,,no-conflict
+178,45,Portugal,2026,0.0334,0.0,,no-conflict
+179,176,Timor Leste,2026,0.0331,0.0,,no-conflict
+180,107,Luxembourg,2026,0.0309,0.0,,no-conflict
+181,113,Latvia,2026,0.0304,0.0,,no-conflict
+182,109,Switzerland,2026,0.028,0.0,,no-conflict
+183,114,Lithuania,2026,0.0279,0.0,,no-conflict
+184,108,Netherlands,2026,0.0266,0.0,,no-conflict
+185,37,Iceland,2026,0.0264,0.0,,no-conflict
+186,90,Cyprus,2026,0.024999999999999998,0.0,,no-conflict
+187,98,Czech Republic,2026,0.0246,0.0,,no-conflict
+188,111,Estonia,2026,0.0202,0.0,,no-conflict
+189,103,Slovenia,2026,0.0192,0.0,,no-conflict
+190,171,New Zealand,2026,0.0139,0.0,,no-conflict
