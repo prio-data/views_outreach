@@ -1,0 +1,72 @@
+{
+    "main_mean": {
+        "name": "Predicted number of fatalities in state-based armed conflict",
+        "description": "Point prediction of the number of fatalities in state-based armed conflict.",
+        "unit": {
+            "name": "Fatalities",
+            "range": "0 - unlimited"
+        },
+        "original": "pred_lr_ged_sb",
+        "type": "Ensemble model",
+        "visualization": {
+            "legend": "Predicted fatalities",
+            "colormap": "rainbow",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "ln",
+                "popup": "N/A",
+                "suffix": ""
+
+            }
+        }
+    },
+    "main_mean_ln": {
+        "name": "Predicted log number of fatalities in state-based armed conflict",
+        "description": "Point prediction of the log number of fatalities in state-based armed conflict. Expressed in natural logged form plus 1 [ln(Y+1)].",
+        "unit": {
+            "name": "ln(fatalities)",
+            "range": "0 - unlimited"
+        },
+        "original": "Non-applicable",
+        "type": "Ensemble model",
+        "visualization": {
+            "legend": "Predicted fatalities",
+            "colormap": "rainbow",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "N/A",
+                "popup": "N/A",
+                "suffix": ""
+            }
+        }
+    },
+    "main_dich": {
+        "name": "Predicted probability of state-based armed conflict",
+        "description": "Predicted probability of at least 25 battle-related deaths (BRDs) in state-based armed conflict per country-month, or at least 1 BRD per PRIO-GRID-month. Estimated from the applicable ensemble model results.",
+        "unit": {
+            "name": "Probability",
+            "range": "0-1"
+        },
+        "original": "Non-applicable",
+        "type": "Non-applicable",
+        "visualization": {
+            "legend": "Predicted probability",
+            "colormap": "rainbow",
+            "dictionary": {
+                "cm": "dictionary_dichotomous_cm",
+                "pgm": "dictionary_dichotomous_pgm"
+            },
+            "transformation": {
+                "data": "logit",
+                "popup": "*100",
+                "suffix": "%"
+            }
+        }
+    }
+}
