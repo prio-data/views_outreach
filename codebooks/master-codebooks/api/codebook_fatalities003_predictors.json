@@ -1,0 +1,177 @@
+{
+    "ucdp_ged_sb_best_sum": {
+        "name": "(UCDP) Observed fatalities, state-based conflict, VIEWS-adaptation",
+        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>state-based conflict</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "unit": {
+            "name": "Fatality count",
+            "range": "0-unlimited"
+        },
+        "source": {
+            "institution": {
+                "name": "Uppsala Conflict Data Program (UCDP)",
+                "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
+            },
+            "variable": {
+                "id": "best",
+                "url": "N/A"
+            },
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
+            "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
+            "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
+        },
+        "visualization": {
+            "legend": "Fatality count",
+            "colormap": "viridis",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "ln",
+                "popup": "N/A",
+                "suffix": ""
+            }
+        }
+    },
+    "ucdp_ged_ns_best_sum": {
+        "name": "(UCDP) Observed fatalities, non-state conflict, VIEWS-adaptation",
+        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>non-state conflict</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "unit": {
+            "name": "Fatality count",
+            "range": "0-unlimited"
+        },
+        "source": {
+            "institution": {
+                "name": "Uppsala Conflict Data Program (UCDP)",
+                "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
+            },
+            "variable": {
+                "id": "best",
+                "url": "N/A"
+            },
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
+            "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
+            "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
+        },
+        "visualization": {
+            "legend": "Fatality count",
+            "colormap": "viridis",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "ln",
+                "popup": "N/A",
+                "suffix": ""
+            }
+        }
+    },
+    "ucdp_ged_os_best_sum": {
+        "name": "(UCDP) Observed fatalities, one-sided violence, VIEWS-adaptation",
+        "description": "VIEWS-adaptation of the UCDP 'best estimate' of fatalities from <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>one-sided violence</a>, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "unit": {
+            "name": "Fatality count",
+            "range": "0-unlimited"
+        },
+        "source": {
+            "institution": {
+                "name": "Uppsala Conflict Data Program (UCDP)",
+                "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
+            },
+            "variable": {
+                "id": "best",
+                "url": "N/A"
+            },
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
+            "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
+            "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
+        },
+        "visualization": {
+            "legend": "Fatality count",
+            "colormap": "viridis",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "ln",
+                "popup": "N/A",
+                "suffix": ""
+            }
+        }
+    },
+    "ucdp_ged_ns_best_count": {
+        "name": "(UCDP) Count of observed conflict events, non-state conflict, VIEWS-adaptation",
+        "description": "Count of the total number of observed <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>non-state conflict</a> events.</br></br>Based on the UCDP 'best estimate' of fatalities, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "unit": {
+            "name": "Conflict event count",
+            "range": "0-unlimited"
+        },
+        "source": {
+            "institution": {
+                "name": "Uppsala Conflict Data Program (UCDP)",
+                "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
+            },
+            "variable": {
+                "id": "best",
+                "url": "N/A"
+            },
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
+            "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
+            "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
+        },
+        "visualization": {
+            "legend": "Conflict event count",
+            "colormap": "viridis",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "ln",
+                "popup": "N/A",
+                "suffix": ""
+            }
+        }
+    },
+    "ucdp_ged_os_best_count": {
+        "name": "(UCDP) Count of observed conflict events, one-sided violence, VIEWS-adaptation",
+        "description": "Count of the total number of observed conflict events from the <a href='https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions'>one-sided violence</a> category.</br></br>Based on the UCDP 'best estimate' of fatalities, aggregated to the VIEWS levels of analysis (see <a href='https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf'>Hegre et al., 2023</a>).",
+        "unit": {
+            "name": "Conflict event count",
+            "range": "0-unlimited"
+        },
+        "source": {
+            "institution": {
+                "name": "Uppsala Conflict Data Program (UCDP)",
+                "url": "<a href='https://ucdp.uu.se/'>https://ucdp.uu.se/</a>"
+            },
+            "variable": {
+                "id": "best",
+                "url": "N/A"
+            },
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
+            "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
+            "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
+        },
+        "visualization": {
+            "legend": "Conflict event count",
+            "colormap": "viridis",
+            "dictionary": {
+                "cm": "dictionary_stand_1p_10k",
+                "pgm": "dictionary_stand_1p"
+            },
+            "transformation": {
+                "data": "ln",
+                "popup": "N/A",
+                "suffix": ""
+            }
+        }
+    }
+}
