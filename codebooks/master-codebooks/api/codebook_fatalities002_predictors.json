@@ -15,8 +15,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2025-11",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.10",                                        
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
             "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -50,8 +50,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2025-11",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.10",                                        
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
             "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -85,8 +85,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2025-11",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.10",                                        
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
             "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -120,8 +120,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2025-11",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.10",                                        
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
             "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -155,8 +155,8 @@
                 "id": "best",
                 "url": "N/A"
             },
-            "date_of_access": "2025-11",
-            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.10",                                        
+            "date_of_access": "2025-12",
+            "dataset": "UCDP Georeferenced Events Dataset (GED) Global version 25.1; UCDP Candidate Events Dataset (UCDP Candidate) version 25.9.11",                                        
             "citation": "Davies, S., Pettersson, T., Sollenberg, M., & Öberg, M. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4); Sundberg, Ralph and Erik Melander (2013). Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4); Hegre, Håvard, Mihai Croicu, Kristine Eck, and Stina Högbladh (July 2020). Introducing the UCDP Candidate Events Dataset. Research & Politics.",
             "license": "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
         },
@@ -400,8 +400,8 @@
                 "id": "NY.GDP.PCAP.KD",
                 "url": "<a href='https://data.worldbank.org/indicator/NY.GDP.PCAP.KD'>https://data.worldbank.org/indicator/NY.GDP.PCAP.KD</a>"
             },
-            "date_of_access": "2025-10-21",
-            "dataset": "World Development Indicators (2025-10-07)",
+            "date_of_access": "2025-12-19",
+            "dataset": "World Development Indicators (2025-12-16)",
             "citation": "The World Bank (2025). World Development Indicators, 'GDP per capita (constant 2015 US$)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
             "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
@@ -435,8 +435,8 @@
                 "id": "SP.DYN.LE00.IN",
                 "url": "<a href='https://data.worldbank.org/indicator/SP.DYN.LE00.IN'>https://data.worldbank.org/indicator/SP.DYN.LE00.IN</a>"
             },
-            "date_of_access": "2025-10-21",
-            "dataset": "World Development Indicators (2025-10-07)",
+            "date_of_access": "2025-12-19",
+            "dataset": "World Development Indicators (2025-12-16)",
             "citation": "The World Bank (2025). World Development Indicators, 'Life expectancy at birth, total (years)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
             "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
@@ -470,8 +470,8 @@
                 "id": "SE.PRM.NENR",
                 "url": "<a href='https://data.worldbank.org/indicator/SE.PRM.NENR'>https://data.worldbank.org/indicator/SE.PRM.NENR</a>"
             },
-            "date_of_access": "2025-10-21",
-            "dataset": "World Development Indicators (2025-10-07)",
+            "date_of_access": "2025-12-19",
+            "dataset": "World Development Indicators (2025-12-16)",
             "citation": "The World Bank (2025). World Development Indicators, 'School enrollment, primary (% net)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
             "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
@@ -505,8 +505,8 @@
                 "id": "SP.POP.TOTL",
                 "url": "<a href='https://data.worldbank.org/indicator/SP.POP.TOTL'>https://data.worldbank.org/indicator/SP.POP.TOTL</a>"
             },
-            "date_of_access": "2025-10-21",
-            "dataset": "World Development Indicators (2025-10-07)",
+            "date_of_access": "2025-12-19",
+            "dataset": "World Development Indicators (2025-12-16)",
             "citation": "The World Bank (2025). World Development Indicators, 'Population, total'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
             "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
@@ -540,8 +540,8 @@
                 "id": "SP.DYN.IMRT.IN",
                 "url": "<a href='https://data.worldbank.org/indicator/SP.DYN.IMRT.IN'>https://data.worldbank.org/indicator/SP.DYN.IMRT.IN</a>"
             },
-            "date_of_access": "2025-10-21",
-            "dataset": "World Development Indicators (2025-10-07)",
+            "date_of_access": "2025-12-19",
+            "dataset": "World Development Indicators (2025-12-16)",
             "citation": "The World Bank (2025). World Development Indicators, 'Mortality rate, infant (per 1,000 live births)'. Accessed using the 3rd party app WBGAPI (https://pypi.org/project/wbgapi/) by means of a query of the WDI database (db=2).",
             "license": "<a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>"
         },
