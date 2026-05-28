@@ -6,7 +6,7 @@
             "name": "Fatalities",
             "range": "0 - unlimited"
         },
-        "original": "pred_lr_ged_sb",
+        "original": "pred_ln_ged_sb_dep",
         "type": "Ensemble model",
         "visualization": {
             "legend": "Predicted fatalities",
